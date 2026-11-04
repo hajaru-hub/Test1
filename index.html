@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <!-- Search Bar & Staff Inventory Table (Moved under Charts) -->
+    <!-- Search Bar & Staff Inventory Table (Under Charts) -->
     <div class="dashboard-card">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
@@ -184,24 +184,20 @@
     let chartCompanyInstance = null;
     let chartWorkbaseInstance = null;
 
-    function setDebugStatus(msg, type = "info") {
-      const el = document.getElementById("debug-status");
-      if (el) { el.className = `status-${type}`; el.innerHTML = msg; }
-    }
-
     function parseFieldValue(val) {
       if (val === null || val === undefined) return "N/A";
-      if (typeof val === 'object' && val.Value) return val.Value;
-      if (typeof val === 'object' && val.Email) return val.Email;
-      if (typeof val === 'object' && val.results) return val.results.join(', ');
+      if (typeof val === 'object') {
+        if (val.Value !== undefined) return val.Value;
+        if (val.value !== undefined) return val.value;
+        if (val.Email !== undefined) return val.Email;
+        if (Array.isArray(val.results)) return val.results.join(', ');
+      }
       const str = String(val).trim();
-      return str === "" ? "N/A" : str;
+      return (str === "" || str === "null" || str === "undefined") ? "N/A" : str;
     }
 
     async function fetchLocalData() {
-      setDebugStatus("Fetching live data from Test1 repository...", "info");
       const DATA_URL = `https://hajaru-hub.github.io/Test1/data.json?t=${Date.now()}`;
-      
       const response = await fetch(DATA_URL, { cache: "no-store" });
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: Unable to fetch data.json`);
@@ -218,12 +214,6 @@
       try {
         const items = await fetchLocalData();
 
-        if (items.length === 0) {
-          setDebugStatus("Connected to Test1, but <strong>0 items</strong> were found in data.json.", "error");
-        } else {
-          setDebugStatus(`Connected! Successfully loaded <strong>${items.length} items</strong> from Test1.`, "success");
-        }
-
         rawListItems = items.map(item => ({
           ID: item.ID || item.No || item.Id,
           Status: parseFieldValue(item.Status || item.STATUS),
@@ -232,14 +222,13 @@
           Name: parseFieldValue(item.Name || item.NAME || item.Title),
           Email: parseFieldValue(item.Email || item.EMAIL),
           Designation: parseFieldValue(item.Designation || item.DESIGNATION),
-          Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE)
+          Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base)
         }));
 
         populateFilterDropdowns(rawListItems);
         applyFilters();
       } catch (error) {
         console.error(error);
-        setDebugStatus(`<strong>Connection Error:</strong> ${error.message}. Ensure GitHub Pages deployment is active.`, "error");
       }
     }
 
