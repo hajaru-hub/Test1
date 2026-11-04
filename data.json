@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "ID": 1,
+      "Title": "MacBook Pro 16",
+      "Model": "A2485",
+      "Company": "RLEB",
+      "Brand": "APPLE",
+      "Workbase": "KL",
+      "Status": "In Use"
+    },
+    {
+      "ID": 2,
+      "Title": "ThinkPad X1 Carbon",
+      "Model": "Gen 10",
+      "Company": "RLSB",
+      "Brand": "LENOVO",
+      "Workbase": "ASB",
+      "Status": "In Stock"
+    },
+    {
+      "ID": 3,
+      "Title": "Latitude 5430",
+      "Model": "i7-1265U",
+      "Company": "AMS",
+      "Brand": "DELL",
+      "Workbase": "KSB",
+      "Status": "Repair"
+    },
+    {
+      "ID": 4,
+      "Title": "EliteBook 840",
+      "Model": "G8",
+      "Company": "PMAX",
+      "Brand": "HP",
+      "Workbase": "MIRI",
+      "Status": "Decom"
+    }
+  ]
+}
