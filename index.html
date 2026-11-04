@@ -151,7 +151,7 @@
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
         <div style="width: 340px; max-width: 100%;">
-          <input type="text" id="filter-search" class="form-control" placeholder="Search staff name" oninput="applyFilters()">
+          <input type="text" id="filter-search" class="form-control" placeholder="Search staff name, brand, model..." oninput="applyFilters()">
         </div>
       </div>
       <div class="table-responsive">
@@ -161,8 +161,8 @@
               <th>Status</th>
               <th>Company</th>
               <th>Name</th>
-              <th>Email</th>
-              <th>Designation</th>
+              <th>Brand</th>
+              <th>Model</th>
               <th>Work Base</th>
             </tr>
           </thead>
@@ -217,10 +217,9 @@
           ID: item.ID || item.No || item.Id,
           Status: parseFieldValue(item.Status || item.STATUS),
           Company: parseFieldValue(item.Company || item.COMPANY),
-          StaffID: parseFieldValue(item.StaffID || item.STAFF_x0020_ID || item['STAFF ID']),
           Name: parseFieldValue(item.Name || item.NAME || item.Title),
-          Email: parseFieldValue(item.Email || item.EMAIL),
-          Designation: parseFieldValue(item.Designation || item.DESIGNATION),
+          Brand: parseFieldValue(item.Brand || item.BRAND),
+          Model: parseFieldValue(item.Model || item.MODEL),
           Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base)
         }));
 
@@ -260,9 +259,8 @@
       const filtered = rawListItems.filter(item => {
         const textMatch = !searchVal || 
           item.Name.toLowerCase().includes(searchVal) ||
-          item.StaffID.toLowerCase().includes(searchVal) ||
-          item.Email.toLowerCase().includes(searchVal) ||
-          item.Designation.toLowerCase().includes(searchVal) ||
+          item.Brand.toLowerCase().includes(searchVal) ||
+          item.Model.toLowerCase().includes(searchVal) ||
           item.Company.toLowerCase().includes(searchVal) ||
           item.Workbase.toLowerCase().includes(searchVal);
 
@@ -313,8 +311,8 @@
           <td><span class="badge-status ${getBadgeClass(item.Status)}">${item.Status}</span></td>
           <td>${item.Company}</td>
           <td class="fw-bold">${item.Name}</td>
-          <td>${item.Email}</td>
-          <td>${item.Designation}</td>
+          <td>${item.Brand}</td>
+          <td>${item.Model}</td>
           <td>${item.Workbase}</td>
         </tr>
       `).join("");
