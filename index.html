@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <!-- Search Bar & Staff Inventory Table (Under Charts) -->
+    <!-- Search Bar & Staff Inventory Table -->
     <div class="dashboard-card">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
@@ -160,7 +160,6 @@
             <tr>
               <th>Status</th>
               <th>Company</th>
-              <th>Staff ID</th>
               <th>Name</th>
               <th>Email</th>
               <th>Designation</th>
@@ -168,7 +167,7 @@
             </tr>
           </thead>
           <tbody id="inventory-table-body">
-            <tr><td colspan="7" class="text-center text-muted py-3">Loading inventory records...</td></tr>
+            <tr><td colspan="6" class="text-center text-muted py-3">Loading inventory records...</td></tr>
           </tbody>
         </table>
       </div>
@@ -305,7 +304,7 @@
     function renderTable(items) {
       const tbody = document.getElementById("inventory-table-body");
       if (items.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-3">No matching staff records found</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="6" class="text-center text-muted py-3">No matching staff records found</td></tr>`;
         return;
       }
 
@@ -313,7 +312,6 @@
         <tr>
           <td><span class="badge-status ${getBadgeClass(item.Status)}">${item.Status}</span></td>
           <td>${item.Company}</td>
-          <td class="fw-bold">${item.StaffID}</td>
           <td class="fw-bold">${item.Name}</td>
           <td>${item.Email}</td>
           <td>${item.Designation}</td>
