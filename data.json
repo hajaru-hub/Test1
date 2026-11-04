@@ -1408,15 +1408,5 @@
     "StaffID": null,
     "Status": "In Use",
     "Workbase": null
-  },
-  {
-    "Company": "RLEB",
-    "Designation": null,
-    "Email": null,
-    "ID": 235,
-    "Name": "hajar",
-    "StaffID": null,
-    "Status": "In Stock",
-    "Workbase": null
   }
 ]}
