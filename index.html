@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Inventory Asset Dashboard</title>
+  <title>IT Inventory Asset Dashboard - Test1</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,6 @@
     .chart-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 14px; }
     .chart-container { position: relative; width: 100%; height: 210px; }
 
-    /* Custom Status Badges matching SharePoint choices */
     .badge-status { font-weight: 600; padding: 5px 12px; border-radius: 12px; font-size: 0.75rem; }
     .badge-inuse { background-color: #dbeafe; color: #1e40af; }
     .badge-instock { background-color: #dcfce7; color: #166534; }
@@ -70,7 +69,6 @@
     .badge-decom { background-color: #fee2e2; color: #991b1b; }
     .badge-default { background-color: #f1f5f9; color: #475569; }
 
-    /* Table Container Styling */
     .table-responsive { max-height: 280px; overflow-y: auto; }
     .custom-table { font-size: 0.85rem; margin-bottom: 0; }
     .custom-table th { background: #f1f5f9; position: sticky; top: 0; z-index: 2; font-weight: 600; text-transform: uppercase; font-size: 0.72rem; color: var(--text-muted); }
@@ -86,7 +84,7 @@
   <div class="container-fluid px-0">
     <div id="debug-status" class="status-info">Connecting to GitHub Pages dataset...</div>
 
-    <!-- Filter Dropdowns Bar -->
+    <!-- Filters -->
     <div class="dashboard-card mb-3">
       <div class="d-flex align-items-end justify-content-between flex-wrap gap-3">
         <div class="filter-group">
@@ -111,7 +109,7 @@
       </div>
     </div>
 
-    <!-- KPI Cards Row -->
+    <!-- KPI Cards -->
     <div class="row g-3 mb-3">
       <div class="col">
         <div class="dashboard-card border-accent-purple">
@@ -145,7 +143,7 @@
       </div>
     </div>
 
-    <!-- Search Bar & Short Inventory Table -->
+    <!-- Search Bar & Short Table -->
     <div class="dashboard-card mb-3">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">Asset Inventory Quick View</div>
@@ -172,7 +170,7 @@
       </div>
     </div>
 
-    <!-- Analytics Charts Grid -->
+    <!-- Charts Row -->
     <div class="row g-3">
       <div class="col-md-3">
         <div class="dashboard-card">
@@ -204,7 +202,6 @@
   <script>
     const CONFIG = { pollIntervalSeconds: 30 };
     
-    // Explicit choice definitions matching SharePoint list choices
     const KNOWN_CHOICES = {
       Status: ["In Use", "In Stock", "Repair", "Decom"],
       Company: ["RLEB", "RLSB", "RLS", "RLR", "RLP", "RLLL", "AMS", "APRL", "PMAX"],
@@ -241,12 +238,14 @@
     }
 
     async function fetchLocalData() {
-      setDebugStatus("Fetching live data from GitHub Pages...", "info");
-      const DATA_URL = `https://hajaru-hub.github.io/test/data.json?t=${Date.now()}`;
+      setDebugStatus("Fetching live data from Test1 GitHub Pages...", "info");
+      
+      // Points specifically to your Test1 repository
+      const DATA_URL = `https://hajaru-hub.github.io/Test1/data.json?t=${Date.now()}`;
       
       const response = await fetch(DATA_URL, { cache: "no-store" });
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: Unable to fetch data.json`);
+        throw new Error(`HTTP ${response.status}: Unable to fetch data.json from Test1`);
       }
       const raw = await response.json();
       
@@ -261,9 +260,9 @@
         const items = await fetchLocalData();
 
         if (items.length === 0) {
-          setDebugStatus("Connected successfully, but <strong>0 items</strong> were found in data.json.", "error");
+          setDebugStatus("Connected to Test1, but <strong>0 items</strong> were found in data.json.", "error");
         } else {
-          setDebugStatus(`Connected! Successfully loaded <strong>${items.length} items</strong> from GitHub Pages.`, "success");
+          setDebugStatus(`Connected! Loaded <strong>${items.length} items</strong> from Test1 repository.`, "success");
         }
 
         rawListItems = items.map(item => ({
@@ -280,7 +279,7 @@
         applyFilters();
       } catch (error) {
         console.error(error);
-        setDebugStatus(`<strong>Connection Error:</strong> ${error.message}. Check GitHub deployment settings.`, "error");
+        setDebugStatus(`<strong>Connection Error:</strong> ${error.message}. Confirm GitHub Pages deployment is active for Test1.`, "error");
       }
     }
 
@@ -389,7 +388,6 @@
       const labelFont = { family: "'Segoe UI', sans-serif", size: 10, weight: "600" };
       const numberFont = { family: "'Lora', Georgia, serif", size: 10, weight: "600" };
 
-      // Status Chart (Doughnut)
       const statusCounts = countByProperty(items, "Status");
       const statusLabels = Object.keys(statusCounts);
       const statusColors = statusLabels.map(lbl => STATUS_COLORS[lbl] || "#64748b");
@@ -401,7 +399,6 @@
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: labelFont, color: "#0f172a", boxWidth: 12 } } } }
       });
 
-      // Company Chart (Horizontal Bar)
       const compCounts = countByProperty(items, "Company");
       const ctxComp = document.getElementById("chartCompany").getContext("2d");
       if (chartCompanyInstance) chartCompanyInstance.destroy();
@@ -411,7 +408,6 @@
         options: { indexAxis: "y", responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { stepSize: 1, font: numberFont } }, y: { ticks: { font: labelFont } } } }
       });
 
-      // Workbase Chart (Pie)
       const wbCounts = countByProperty(items, "Workbase");
       const ctxWb = document.getElementById("chartWorkbase").getContext("2d");
       if (chartWorkbaseInstance) chartWorkbaseInstance.destroy();
@@ -421,7 +417,6 @@
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: labelFont, color: "#0f172a", boxWidth: 12 } } } }
       });
 
-      // Brand Chart (Bar)
       const brandCounts = countByProperty(items, "Brand");
       const ctxBrand = document.getElementById("chartBrand").getContext("2d");
       if (chartBrandInstance) chartBrandInstance.destroy();
