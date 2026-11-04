@@ -70,18 +70,11 @@
     .table-responsive { max-height: 320px; overflow-y: auto; }
     .custom-table { font-size: 0.85rem; margin-bottom: 0; }
     .custom-table th { background: #f1f5f9; position: sticky; top: 0; z-index: 2; font-weight: 600; text-transform: uppercase; font-size: 0.72rem; color: var(--text-muted); }
-
-    #debug-status { font-size: 0.8rem; padding: 10px 14px; border-radius: 8px; margin-bottom: 15px; }
-    .status-info { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
-    .status-error { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
-    .status-success { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
   </style>
 </head>
 <body>
 
   <div class="container-fluid px-0">
-    <div id="debug-status" class="status-info">Connecting to GitHub Pages dataset...</div>
-
     <!-- Filters -->
     <div class="dashboard-card mb-3">
       <div class="d-flex align-items-end justify-content-between flex-wrap gap-3">
@@ -131,12 +124,34 @@
       </div>
     </div>
 
-    <!-- Search Bar & Staff Inventory Table -->
-    <div class="dashboard-card mb-3">
+    <!-- Charts Grid -->
+    <div class="row g-3 mb-3">
+      <div class="col-md-4">
+        <div class="dashboard-card">
+          <div class="chart-title">Status Split</div>
+          <div class="chart-container"><canvas id="chartStatus"></canvas></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="dashboard-card">
+          <div class="chart-title">Company Breakdown</div>
+          <div class="chart-container"><canvas id="chartCompany"></canvas></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="dashboard-card">
+          <div class="chart-title">Work Base Distribution</div>
+          <div class="chart-container"><canvas id="chartWorkbase"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Bar & Staff Inventory Table (Moved under Charts) -->
+    <div class="dashboard-card">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
         <div style="width: 340px; max-width: 100%;">
-          <input type="text" id="filter-search" class="form-control" placeholder="🔍 Search Staff ID, Name, Email..." oninput="applyFilters()">
+          <input type="text" id="filter-search" class="form-control" placeholder="Search staff name" oninput="applyFilters()">
         </div>
       </div>
       <div class="table-responsive">
@@ -156,28 +171,6 @@
             <tr><td colspan="7" class="text-center text-muted py-3">Loading inventory records...</td></tr>
           </tbody>
         </table>
-      </div>
-    </div>
-
-    <!-- Charts Grid -->
-    <div class="row g-3">
-      <div class="col-md-4">
-        <div class="dashboard-card">
-          <div class="chart-title">Status Split</div>
-          <div class="chart-container"><canvas id="chartStatus"></canvas></div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="dashboard-card">
-          <div class="chart-title">Company Breakdown</div>
-          <div class="chart-container"><canvas id="chartCompany"></canvas></div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="dashboard-card">
-          <div class="chart-title">Work Base Distribution</div>
-          <div class="chart-container"><canvas id="chartWorkbase"></canvas></div>
-        </div>
       </div>
     </div>
   </div>
