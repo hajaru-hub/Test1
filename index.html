@@ -25,6 +25,7 @@
       color: var(--text-main);
       padding: 20px;
       margin: 0;
+      overflow: hidden; /* Prevents inner iframe scrollbar */
     }
 
     .dashboard-card {
@@ -67,8 +68,8 @@
     .badge-repair { background-color: #e0e7ff; color: #3730a3; }
     .badge-default { background-color: #f1f5f9; color: #475569; }
 
-    .table-responsive { max-height: 320px; overflow-y: auto; }
-    .custom-table { font-size: 0.85rem; margin-bottom: 0; }
+    .table-responsive { max-height: 320px; overflow-y: auto; overflow-x: auto; }
+    .custom-table { font-size: 0.85rem; margin-bottom: 0; min-width: 750px; }
     .custom-table th { background: #f1f5f9; position: sticky; top: 0; z-index: 2; font-weight: 600; text-transform: uppercase; font-size: 0.72rem; color: var(--text-muted); }
   </style>
 </head>
@@ -151,7 +152,7 @@
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
         <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
         <div style="width: 340px; max-width: 100%;">
-          <input type="text" id="filter-search" class="form-control" placeholder="Search staff name, brand, model..." oninput="applyFilters()">
+          <input type="text" id="filter-search" class="form-control" placeholder="Search staff name, serial no..." oninput="applyFilters()">
         </div>
       </div>
       <div class="table-responsive">
@@ -163,11 +164,12 @@
               <th>Name</th>
               <th>Brand</th>
               <th>Model</th>
+              <th>Serial Number</th>
               <th>Work Base</th>
             </tr>
           </thead>
           <tbody id="inventory-table-body">
-            <tr><td colspan="6" class="text-center text-muted py-3">Loading inventory records...</td></tr>
+            <tr><td colspan="7" class="text-center text-muted py-3">Loading inventory records...</td></tr>
           </tbody>
         </table>
       </div>
@@ -220,6 +222,7 @@
           Name: parseFieldValue(item.Name || item.NAME || item.Title),
           Brand: parseFieldValue(item.Brand || item.BRAND),
           Model: parseFieldValue(item.Model || item.MODEL),
+          SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
           Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base)
         }));
 
@@ -261,6 +264,7 @@
           item.Name.toLowerCase().includes(searchVal) ||
           item.Brand.toLowerCase().includes(searchVal) ||
           item.Model.toLowerCase().includes(searchVal) ||
+          item.SerialNumber.toLowerCase().includes(searchVal) ||
           item.Company.toLowerCase().includes(searchVal) ||
           item.Workbase.toLowerCase().includes(searchVal);
 
@@ -302,7 +306,7 @@
     function renderTable(items) {
       const tbody = document.getElementById("inventory-table-body");
       if (items.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="text-center text-muted py-3">No matching staff records found</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-3">No matching staff records found</td></tr>`;
         return;
       }
 
@@ -313,6 +317,7 @@
           <td class="fw-bold">${item.Name}</td>
           <td>${item.Brand}</td>
           <td>${item.Model}</td>
+          <td>${item.SerialNumber}</td>
           <td>${item.Workbase}</td>
         </tr>
       `).join("");
