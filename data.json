@@ -5,6 +5,7 @@
     "ID": 2,
     "Model": "MacBook Air (13-inch, M4, 2025)",
     "Name": "THIEN CHIET CHAI",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -14,6 +15,7 @@
     "ID": 3,
     "Model": "MacBook Pro (14-inch, M4, 2024)",
     "Name": "WAN HASSAN BIN MOHD JAMIL",
+    "SerialNumber": "C02CQ40QMD6N",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -23,6 +25,7 @@
     "ID": 4,
     "Model": "MacBook Air (M1, 2020)",
     "Name": "NEO MENG FONG (MANDY)",
+    "SerialNumber": "HXJMLRHY1WFV",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -32,6 +35,7 @@
     "ID": 5,
     "Model": "MacBook Air (M1, 2020)",
     "Name": "GAN HUEY KUAN",
+    "SerialNumber": "FVFH16Q4Q6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -41,6 +45,7 @@
     "ID": 6,
     "Model": "Macbook Air M1",
     "Name": "YAP FOOI FOONG",
+    "SerialNumber": "HXJMLJRY1WFV",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -50,6 +55,7 @@
     "ID": 7,
     "Model": "Vostro 5320",
     "Name": "SHAZLEEN NURAIN BT MOHD NOR",
+    "SerialNumber": "CR24HS3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -59,6 +65,7 @@
     "ID": 8,
     "Model": "Latitude 3450",
     "Name": "NURUL INTAN BINTI TASELIM",
+    "SerialNumber": "HYRJW84",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -68,6 +75,7 @@
     "ID": 9,
     "Model": "Macbook Air (M1, 2020)",
     "Name": "WAN NURNAIMI BINTI WAN MOHAMAD",
+    "SerialNumber": "FVFDX4BNQ6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -77,6 +85,7 @@
     "ID": 10,
     "Model": "Latitude 3420",
     "Name": "MUHAMAD RAFSHAM BIN MOHAMED RAZAMAN",
+    "SerialNumber": "BH0B2B3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -86,6 +95,7 @@
     "ID": 11,
     "Model": "MacBook Air (13-inch, M4, 2025)",
     "Name": "MOKHTAR BIN HAJI ALI",
+    "SerialNumber": "G3742V0KC0",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -95,6 +105,7 @@
     "ID": 12,
     "Model": "iMac (Retina 5K, 27-inch, 2019)",
     "Name": "MOKHTAR BIN HAJI ALI",
+    "SerialNumber": "C02ZN0NTJV3X",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -104,6 +115,7 @@
     "ID": 13,
     "Model": "Macbook Air (M1, 2020)",
     "Name": "NOR AZWATI BINTI AZMI",
+    "SerialNumber": "FVFH16NPQ6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -113,6 +125,7 @@
     "ID": 14,
     "Model": "Latitude 5330",
     "Name": "RASIDAH AZLINA BINTI RASHID",
+    "SerialNumber": "7K9FP04",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -122,6 +135,7 @@
     "ID": 15,
     "Model": null,
     "Name": "MOHD ZULFADLI BIN OMOR",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -131,6 +145,7 @@
     "ID": 17,
     "Model": "Vostro 5320",
     "Name": "NURUL AINA LIYANA BINTI MOHD TALIB",
+    "SerialNumber": "B85ZKS3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -140,6 +155,7 @@
     "ID": 18,
     "Model": null,
     "Name": "MUHAMMAD SYAMIM BIN ZAHORI",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -149,6 +165,7 @@
     "ID": 19,
     "Model": "Latitude 5330",
     "Name": "AINA KHALIDA BINTI MOHAMAD IMRAN",
+    "SerialNumber": "JDHDQL3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -158,6 +175,7 @@
     "ID": 20,
     "Model": "Latitude 3440",
     "Name": "MUHAMMAD AFIQ BIN AZAMI",
+    "SerialNumber": "H40TGX3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -167,6 +185,7 @@
     "ID": 21,
     "Model": "LATITUDE 5330",
     "Name": "RAJA AZLAN AMIRUL BIN RAJA MAT",
+    "SerialNumber": "2K9FP04",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -176,6 +195,7 @@
     "ID": 22,
     "Model": "LATITUDE 5330",
     "Name": "NABILLAH BINTI ZULKAFLI",
+    "SerialNumber": "8K9FP04",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -185,6 +205,7 @@
     "ID": 23,
     "Model": null,
     "Name": "MOHD RAIS BIN HAZIZAN",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -194,6 +215,7 @@
     "ID": 24,
     "Model": "Latitude 3450",
     "Name": "YEOW HOE TEE (ALEX)",
+    "SerialNumber": "D2RJW84",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -203,6 +225,7 @@
     "ID": 25,
     "Model": "Latitude 3450",
     "Name": "KHAIRULBARIAH BINTI MOHAMMAD NASIR",
+    "SerialNumber": "5BPP2C4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -212,6 +235,7 @@
     "ID": 26,
     "Model": "Latitude 3450",
     "Name": "MUHAMMAD AFIQ BIN KASIM",
+    "SerialNumber": "8DPP2C4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -221,6 +245,7 @@
     "ID": 27,
     "Model": "PRO 14 (PC14250)",
     "Name": "MUHAMMAD SYAFIQ BIN MOHAMAD ZAKY",
+    "SerialNumber": "JW1HBB4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -230,6 +255,7 @@
     "ID": 28,
     "Model": "XPS 14 9440",
     "Name": "LIM CHUI LING CHERYL",
+    "SerialNumber": "22PRGC4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -239,6 +265,7 @@
     "ID": 29,
     "Model": "LATITUDE 3450",
     "Name": "ANIRUL ADRIANA ALIA BINTI AHMAD",
+    "SerialNumber": "D9PP2C4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -248,6 +275,7 @@
     "ID": 30,
     "Model": "LATITUDE 5330",
     "Name": "NUR HAKIMAH BINTI HAIRUDDIN",
+    "SerialNumber": "DDHDQL3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -257,6 +285,7 @@
     "ID": 32,
     "Model": "Latitude 3450",
     "Name": "NADHIRA NUR KHALIESA BINTI AMALUDDIN",
+    "SerialNumber": "1DPP2C4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -266,6 +295,7 @@
     "ID": 34,
     "Model": "LATITUDE 5330",
     "Name": "NIK NURFATIN NATASHA BINTI AHMAD DAUD",
+    "SerialNumber": "9J9FP04",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -275,6 +305,7 @@
     "ID": 35,
     "Model": "LATITUDE 3450",
     "Name": "MUHAMMAD FARHAN BIN ABDUL HALIM",
+    "SerialNumber": "23RJW84",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -284,6 +315,7 @@
     "ID": 36,
     "Model": "Pro 14 Essential PV14250",
     "Name": "WAN SHAHADATUL IMAN BINTI WAN SHAZI",
+    "SerialNumber": "FQK1WF4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -293,6 +325,7 @@
     "ID": 37,
     "Model": "Pro 14 Essential PV14250",
     "Name": "NUR RABAAH BINTI AZMI",
+    "SerialNumber": "G2M1WF4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -302,6 +335,7 @@
     "ID": 42,
     "Model": "Vostro 5490",
     "Name": "SITI HAJAR BINTI UMAR",
+    "SerialNumber": "4PNFRT2",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -311,6 +345,7 @@
     "ID": 98,
     "Model": "Vostro 5471",
     "Name": "MUHAMMAD ZULFADHLI BIN ABDUL RAZAK",
+    "SerialNumber": "8KXYB02",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -320,6 +355,7 @@
     "ID": 99,
     "Model": "MacBook Pro 13' M1",
     "Name": "MOHD FADILY HISYAM BIN IZHAR",
+    "SerialNumber": "C02F704MQ05P",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -329,6 +365,7 @@
     "ID": 100,
     "Model": "Vostro 5490",
     "Name": "SPARE",
+    "SerialNumber": "9P7NQT2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -338,6 +375,7 @@
     "ID": 101,
     "Model": "HP Spectre x360 Conv 14-ea0054TU",
     "Name": "ANWARUDIN BIN SAIDU MOHAMED",
+    "SerialNumber": "5CD132H82W",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -347,6 +385,7 @@
     "ID": 102,
     "Model": "MacBook Air 13.3 - 2020",
     "Name": "THURAIRAJ A/L SAYGRAN",
+    "SerialNumber": "FVFKM6AC1WFY",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -356,6 +395,7 @@
     "ID": 103,
     "Model": "MacBook Air M1 13.3\" - Late 2020",
     "Name": "AHMAD FAHMI BIN YAAKOB",
+    "SerialNumber": "FVFJL079Q6L4",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -365,6 +405,7 @@
     "ID": 104,
     "Model": "Inspiron 14 3467",
     "Name": "NAZRUL IZWANDY BIN HUSSIN",
+    "SerialNumber": "6WMVTJ2",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -374,6 +415,7 @@
     "ID": 105,
     "Model": "HP Spectre x360 - 15-ch011nr",
     "Name": "MUHAMMAD DANIAL IKMAL BIN RUSMAN",
+    "SerialNumber": "5CD81652GN",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -383,6 +425,7 @@
     "ID": 106,
     "Model": "SF113-31-P6GS",
     "Name": "MOHD NAZHIFUDDIN BIN ROZIMAN",
+    "SerialNumber": "NXGNMSM00181101AC87200",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -392,6 +435,7 @@
     "ID": 107,
     "Model": "HP Laptop 15-fc0275AU",
     "Name": "MUHAMMAD SHUKERI BIN RAZMAN",
+    "SerialNumber": "5CD4454HKN",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -401,6 +445,7 @@
     "ID": 108,
     "Model": "Inspiron 14 5420",
     "Name": "NURNADIAH BINTI MOHAMAD",
+    "SerialNumber": "854SJL3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -410,6 +455,7 @@
     "ID": 109,
     "Model": "A516J",
     "Name": "MUHAMMAD ALIF HAKEEM BIN MOHD SUKERI",
+    "SerialNumber": "N8N0CX02R85631C",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -419,6 +465,7 @@
     "ID": 110,
     "Model": "Predator G3-572",
     "Name": "MOHD EIZLAN AMILI BIN MOHD SHAKRI",
+    "SerialNumber": "NHQ2BSM0018130AB503400",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -428,6 +475,7 @@
     "ID": 111,
     "Model": "Latitude 3420",
     "Name": "AIMAN RUSYAIDI BIN ROSLI",
+    "SerialNumber": "JXCCGL3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -437,6 +485,7 @@
     "ID": 115,
     "Model": "LATITUDE 5430",
     "Name": "EE HOOD LIANG",
+    "SerialNumber": "GKXDNN3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -446,6 +495,7 @@
     "ID": 116,
     "Model": "Cyborg 15 A12VE",
     "Name": "MUHAMMAD AFIQ NAQIUDDIN BIN NORAZMAN",
+    "SerialNumber": "9S715K111682ZR2000258",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -455,6 +505,7 @@
     "ID": 117,
     "Model": "Latitude 3450",
     "Name": "MIMI ATIKAH BINTI MISRAN",
+    "SerialNumber": "FXRJW84",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -464,6 +515,7 @@
     "ID": 120,
     "Model": "Macbook Pro (14-inch, 2021)",
     "Name": "MOHD FADZLI BIN HAMIDUN",
+    "SerialNumber": "WWXKGRYFPL",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -473,6 +525,7 @@
     "ID": 121,
     "Model": "Dell Pro 14 PC14250",
     "Name": "AFIF MULIADI BIN RAMLI",
+    "SerialNumber": "JLDGBB4",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -482,6 +535,7 @@
     "ID": 122,
     "Model": "Vostro 5481",
     "Name": "VALARIE HENRY",
+    "SerialNumber": "9QRM6P2",
     "Status": "In Use",
     "Workbase": "MIRI"
   },
@@ -491,6 +545,7 @@
     "ID": 123,
     "Model": "Vostro 5490",
     "Name": "ANIS SOFEA BINTI ROSLI",
+    "SerialNumber": "BGWPLW2",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -500,6 +555,7 @@
     "ID": 139,
     "Model": "THINKPAD E14 GEN2",
     "Name": "ABDULL MANAF BIN NORDIN",
+    "SerialNumber": "PF3RK9FM",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -509,6 +565,7 @@
     "ID": 140,
     "Model": null,
     "Name": "CHIN JIH FUI @ BILLY",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -518,6 +575,7 @@
     "ID": 141,
     "Model": null,
     "Name": "DANNY TAN",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -527,6 +585,7 @@
     "ID": 142,
     "Model": "THINKPAD E14 GEN5",
     "Name": "MOHD IKRAM BIN MOHD RAZENI",
+    "SerialNumber": "PF4TWLMF",
     "Status": "In Use",
     "Workbase": "KSA"
   },
@@ -536,6 +595,7 @@
     "ID": 143,
     "Model": null,
     "Name": "DZESMILLAN DARSON ANAK DESMOND GANI",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -545,6 +605,7 @@
     "ID": 144,
     "Model": null,
     "Name": "KHAIRUSAZWAN BIN MOHAMED HANAPI",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -554,6 +615,7 @@
     "ID": 145,
     "Model": "THINKPAD E14 GEN2",
     "Name": "RAGUNATHAN A/L SUNDARALINGAM",
+    "SerialNumber": "PF3RPDAS",
     "Status": "In Use",
     "Workbase": "KSA"
   },
@@ -563,6 +625,7 @@
     "ID": 146,
     "Model": null,
     "Name": "TUSHAR KHANDELWAL",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -572,6 +635,7 @@
     "ID": 147,
     "Model": null,
     "Name": "HASTA PRIYA HERMAWAN",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -581,6 +645,7 @@
     "ID": 148,
     "Model": null,
     "Name": "KONGPOP KUMNERDPET",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -590,6 +655,7 @@
     "ID": 149,
     "Model": null,
     "Name": "HENDRIK JEFRY SAHERTIAN",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -599,6 +665,7 @@
     "ID": 150,
     "Model": null,
     "Name": "MOHAMMED ALI HUSSEIN YOUSUF",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -608,6 +675,7 @@
     "ID": 153,
     "Model": "THINKPAD E14 GEN2",
     "Name": "ALAN MERISON",
+    "SerialNumber": "PF-3RQ5VM",
     "Status": "In Use",
     "Workbase": "IDN"
   },
@@ -617,6 +685,7 @@
     "ID": 154,
     "Model": "13-INCH MACBOOK AIR (M4,2025)",
     "Name": "MAD HAIMI BIN ABU HASSAN",
+    "SerialNumber": "L2NWD26T9P",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -626,6 +695,7 @@
     "ID": 155,
     "Model": "MACBOOK AIR (M2, 2022)",
     "Name": "MOHD ISYRAF BIN MOHD YUSOF",
+    "SerialNumber": "NCJ27NLJ4V",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -635,6 +705,7 @@
     "ID": 156,
     "Model": "13-INCH MACBOOK AIR (M4,2025)",
     "Name": "ZULKURNAIN BIN MAMAT",
+    "SerialNumber": "KWF4Y6X6RM",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -644,6 +715,7 @@
     "ID": 157,
     "Model": "MacBook Air (Retina, 13-inch, 2020) ",
     "Name": "SITI SORYANI BINTI ISMAIL @ MANSOR",
+    "SerialNumber": "FVFCX5A6M6KG",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -653,6 +725,7 @@
     "ID": 158,
     "Model": "MACBOOK AIR (M1 , 2020)",
     "Name": "ABDUL KARIM BIN SAINUDDIN",
+    "SerialNumber": "FVFF63KAQ6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -662,6 +735,7 @@
     "ID": 159,
     "Model": "Latitude 5330",
     "Name": "MUHAMMAD HIDAYATULLAH BIN AZMI",
+    "SerialNumber": "4J9FP04",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -671,6 +745,7 @@
     "ID": 163,
     "Model": "MACBOOK AIR (13-INCH, MID 2013)",
     "Name": "RAFIQ HAMZI BIN LOKMANALHAKIM",
+    "SerialNumber": "C02MF96GF5V8",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -680,6 +755,7 @@
     "ID": 164,
     "Model": "VOSTRO 5490",
     "Name": "NOOR AMYLIA AMIZA BINTI OSMAN",
+    "SerialNumber": "DQXPLW2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -689,6 +765,7 @@
     "ID": 165,
     "Model": "Pro 14 Essential PV14250",
     "Name": "MOHD AZLAN BIN CHE SULONG",
+    "SerialNumber": "7PK1WF4",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -698,6 +775,7 @@
     "ID": 166,
     "Model": "MACBOOK AIR(M1,2020)",
     "Name": "MOHD FAISAL BIN SEMAN @ ABDULLAH",
+    "SerialNumber": "FVFFT0J8Q6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -707,6 +785,7 @@
     "ID": 167,
     "Model": "MacBook Air (Retina, 13-inch, 2020)",
     "Name": "AHMAD SHAFUL BAHAR BIN MOHD AMAJI",
+    "SerialNumber": "FVFCK8TLM6KG",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -716,6 +795,7 @@
     "ID": 168,
     "Model": "Latitude 3450",
     "Name": "MOHD RIDZAL BIN OTHMAN",
+    "SerialNumber": "C9Z7R74",
     "Status": "In Use",
     "Workbase": "HB"
   },
@@ -725,6 +805,7 @@
     "ID": 169,
     "Model": "Latitude 3450",
     "Name": "ABDUL MANAN BIN HASHIM",
+    "SerialNumber": "D3RJW84",
     "Status": "In Use",
     "Workbase": "HB"
   },
@@ -734,6 +815,7 @@
     "ID": 170,
     "Model": "VOSTRO 5468",
     "Name": "MUHAMMAD SHAHRIL BIN NASIP",
+    "SerialNumber": "5T8XZ32",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -743,6 +825,7 @@
     "ID": 171,
     "Model": "MacBook Pro 13'-2020",
     "Name": "ZURIZAM BIN MAMAT",
+    "SerialNumber": "C02CV3L5ML85",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -752,6 +835,7 @@
     "ID": 172,
     "Model": "MACBOOK AIR(M1,2020)",
     "Name": "GOH TZER FANG (TIFFANY)",
+    "SerialNumber": "HXJM828Y1WFV",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -761,6 +845,7 @@
     "ID": 173,
     "Model": "VOSTRO 5468",
     "Name": "HARRY JOEL MENGGU ANAK JORHAN",
+    "SerialNumber": "DN2TYL2",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -770,6 +855,7 @@
     "ID": 174,
     "Model": "Vostro 5320",
     "Name": "AHMAD FAIZ BIN ANUAR",
+    "SerialNumber": "G7JTHS3",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -779,6 +865,7 @@
     "ID": 175,
     "Model": "MACBOOK AIR , (M1, 2020 13.3 inch)",
     "Name": "MD.FAIZAL BIN JAMALLUDIN",
+    "SerialNumber": "FVFH9DFQQ6L5",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -788,6 +875,7 @@
     "ID": 176,
     "Model": "LATITUDE 3440",
     "Name": "NUR AMIR HAFRIZ BIN ROSLI",
+    "SerialNumber": "3HP7FX3",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -797,6 +885,7 @@
     "ID": 177,
     "Model": null,
     "Name": "MOHD SHUKREE BIN JAMIL",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": null
   },
@@ -806,6 +895,7 @@
     "ID": 178,
     "Model": "MACBOOK AIR(13-INCH, EARLY 2014)",
     "Name": "ABDUL AZIZ BIN JAMANEH",
+    "SerialNumber": "C02NJAUGG086",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -815,6 +905,7 @@
     "ID": 179,
     "Model": "Latitude 3450",
     "Name": "MUHAMMAD NAIM BIN AWANG @ ALI",
+    "SerialNumber": "93RJW84",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -824,6 +915,7 @@
     "ID": 180,
     "Model": "Vostro 5490",
     "Name": "MOHD KHAIDI BIN ZAKARIA",
+    "SerialNumber": "9P7NQT2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -833,6 +925,7 @@
     "ID": 181,
     "Model": "VOSTRO 5471",
     "Name": "MOHD FAIZAL BIN SALLEH",
+    "SerialNumber": "DKD9902",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -842,6 +935,7 @@
     "ID": 184,
     "Model": null,
     "Name": "CHUA KOK KIONG",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -851,6 +945,7 @@
     "ID": 185,
     "Model": "LATITUDE 3420",
     "Name": "FARDI SISWANTO BIN TAHER",
+    "SerialNumber": "F0XFML3",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -860,6 +955,7 @@
     "ID": 186,
     "Model": "MACBOOK AIR , (13-INCH , 2017)",
     "Name": "MUHAMMAD SYAAFIQ BIN SUHARI",
+    "SerialNumber": "FVFYK1QYJ1WT",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -869,6 +965,7 @@
     "ID": 187,
     "Model": "VOSTRO 5490",
     "Name": "KENNEDY JOHN",
+    "SerialNumber": "25WSNT2",
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -878,6 +975,7 @@
     "ID": 188,
     "Model": "Latitude 3450",
     "Name": "RAZALI BIN SHABUDIN",
+    "SerialNumber": "24RJW84",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -887,6 +985,7 @@
     "ID": 189,
     "Model": "VOSTRO 5481",
     "Name": "JOSEPHINE MAY BERNAD",
+    "SerialNumber": "55VPKT2",
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -896,6 +995,7 @@
     "ID": 190,
     "Model": "VOSTRO 5490",
     "Name": "SOLLEH BIN HASSAN",
+    "SerialNumber": "C8X9PT2",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -905,6 +1005,7 @@
     "ID": 191,
     "Model": "Latitude 5330",
     "Name": "ADRINA BINTI A.GHANI",
+    "SerialNumber": "CXJDQL3",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -914,6 +1015,7 @@
     "ID": 192,
     "Model": "Latitude 3450",
     "Name": "WAN MOHD SALMAN BIN WAN OTHMAN",
+    "SerialNumber": "9XRJW84",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -923,6 +1025,7 @@
     "ID": 193,
     "Model": "Latitude 5330",
     "Name": "CLERENCE LUNA ANAK MERANG",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -932,6 +1035,7 @@
     "ID": 194,
     "Model": "LATITUDE 5330",
     "Name": "GREGORY ANAK GEORGE PIN",
+    "SerialNumber": "FDHDQL3",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -941,6 +1045,7 @@
     "ID": 195,
     "Model": "VOSTRO 14 5468",
     "Name": "DAIMLER BIN JUSLI",
+    "SerialNumber": "GV8XZ32",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -950,6 +1055,7 @@
     "ID": 196,
     "Model": "VOSTRO 5481",
     "Name": "BEARNEY MAGING AK LLOYD DENNIS",
+    "SerialNumber": "5VB74P2",
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -959,6 +1065,7 @@
     "ID": 197,
     "Model": "VOSTRO 5481",
     "Name": "N.FARZAN BIN OSMAN",
+    "SerialNumber": "F4VPKT2",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -968,6 +1075,7 @@
     "ID": 199,
     "Model": "VOSTRO 5490",
     "Name": "MUHAMMAD FAIZ BIN MOHD SAUFI",
+    "SerialNumber": "87M5HW2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -977,6 +1085,7 @@
     "ID": 200,
     "Model": "Latitude 3450",
     "Name": "AZRI BIN ABD RAHMAN",
+    "SerialNumber": "H9PP2C4",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -986,6 +1095,7 @@
     "ID": 201,
     "Model": "VOSTRO 5468",
     "Name": "ALEXSON ANAK NUING",
+    "SerialNumber": "G7GXZ32",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -995,6 +1105,7 @@
     "ID": 202,
     "Model": "VOSTRO 5468",
     "Name": "SYAMIM HAKIMI BIN JEFFREE",
+    "SerialNumber": "9W8XZ32 ",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1004,6 +1115,7 @@
     "ID": 203,
     "Model": "Latitude 3430",
     "Name": "MUHAMAD AQIL BIN MOHAMAD ADARIS",
+    "SerialNumber": "5N9FWL3",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -1013,6 +1125,7 @@
     "ID": 204,
     "Model": "VOSTRO 5481",
     "Name": "JACOB ANAK BALANG",
+    "SerialNumber": "HGSB3P2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1022,6 +1135,7 @@
     "ID": 205,
     "Model": "VOSTRO 5481",
     "Name": "YUZIMAN BIN YUNUS",
+    "SerialNumber": "6VB74P2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1031,6 +1145,7 @@
     "ID": 206,
     "Model": "MacBook Air (13-inch, 2017)",
     "Name": "MOHD FAIZ AZWAR BIN KAMARUL ARIFFIN",
+    "SerialNumber": "FVFX7N19J1WL",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1040,6 +1155,7 @@
     "ID": 207,
     "Model": "VOSTRO 5481",
     "Name": "CHUA KOK HING",
+    "SerialNumber": "217C5P2",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -1049,6 +1165,7 @@
     "ID": 208,
     "Model": "G5 5520",
     "Name": "NOR HASLISA FATIAH BINTI HASNAN",
+    "SerialNumber": "8DW68R3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -1058,6 +1175,7 @@
     "ID": 209,
     "Model": "Latitude 3450",
     "Name": "KHIRULNIZAM BIN HIBRIM",
+    "SerialNumber": "32RJW84",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1067,6 +1185,7 @@
     "ID": 210,
     "Model": "Latitude 3450",
     "Name": "MUHAMMAD EIRFAN QAYYUM BIN JUNAIDY",
+    "SerialNumber": "DYRJW84",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1076,6 +1195,7 @@
     "ID": 211,
     "Model": "LATITUDE 5330",
     "Name": "ALIF FAZRIN BIN SABRIN",
+    "SerialNumber": "GJ9FP04",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1085,6 +1205,7 @@
     "ID": 212,
     "Model": "Vostro 5481",
     "Name": "RUSDI BIN LAISSA",
+    "SerialNumber": "F4VPKT2",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1094,6 +1215,7 @@
     "ID": 213,
     "Model": "LATITUDE 5330",
     "Name": "NICK ANDREW TEO",
+    "SerialNumber": "3K9FP04",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1103,6 +1225,7 @@
     "ID": 214,
     "Model": null,
     "Name": "MOHD NURHAFIZAN RAFIE BIN MOHD NUR SYAFIE",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -1112,6 +1235,7 @@
     "ID": 215,
     "Model": "LATITUDE 5330",
     "Name": "JUSTIN MELING ANAK GALAU",
+    "SerialNumber": "GXDJQL3",
     "Status": "In Use",
     "Workbase": "ASB"
   },
@@ -1121,6 +1245,7 @@
     "ID": 216,
     "Model": "Vostro 5490",
     "Name": "NUR ARISSA AMANI BINTI MOHD NIZAM",
+    "SerialNumber": "1GBNQT2",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -1130,6 +1255,7 @@
     "ID": 217,
     "Model": "LATITUDE 3420",
     "Name": "SHURMILA ERLINA BINTI ESAL",
+    "SerialNumber": "BH0B2B3",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -1139,6 +1265,7 @@
     "ID": 218,
     "Model": "Vostro 5490",
     "Name": "NURUL NATASHA BINTI NOORZAIN",
+    "SerialNumber": "1VXPLW2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1148,6 +1275,7 @@
     "ID": 219,
     "Model": "Latitude 3420",
     "Name": "SITI AMANDA BINTI ISMAIL",
+    "SerialNumber": "46W3JL3",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1157,6 +1285,7 @@
     "ID": 220,
     "Model": null,
     "Name": "HADZIQ IZZARD BIN NADZIRUDIN",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1166,6 +1295,7 @@
     "ID": 221,
     "Model": null,
     "Name": "SPENCER ANAK KANA",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -1175,6 +1305,7 @@
     "ID": 222,
     "Model": " Pro 14 Essential PV14250",
     "Name": "ANAS BIN BAHARIN",
+    "SerialNumber": "HQK1WF4",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1184,6 +1315,7 @@
     "ID": 223,
     "Model": "LATITUDE 5330",
     "Name": "MUHAMAD ARIF AFIFI BIN MUHAMAD RAZALI",
+    "SerialNumber": "DH9FP04",
     "Status": "In Use",
     "Workbase": "TBSB/KMM"
   },
@@ -1193,6 +1325,7 @@
     "ID": 224,
     "Model": "LATITUDE 3450",
     "Name": "AHMAD HAFEEZ BIN MOHAMED HABEEBULLAH",
+    "SerialNumber": "HXJMLJRY1WFV",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -1202,6 +1335,7 @@
     "ID": 225,
     "Model": "Latitude 3420",
     "Name": "YANA SHAHEERA BINTI YUNOS",
+    "SerialNumber": "B1XFML3",
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1211,6 +1345,7 @@
     "ID": 226,
     "Model": "Vostro 5481",
     "Name": "RON THOMAS ANAK NYANGGAI",
+    "SerialNumber": "BBS7LT2",
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -1220,6 +1355,7 @@
     "ID": 227,
     "Model": null,
     "Name": "BENNEDICT ANAK WAT LEMBE",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1229,6 +1365,7 @@
     "ID": 228,
     "Model": null,
     "Name": "HUONG WEN KIAT",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "MY"
   },
@@ -1238,6 +1375,7 @@
     "ID": 229,
     "Model": null,
     "Name": "MOHD AFIQ DANIAL BIN SHAHRAINI",
+    "SerialNumber": null,
     "Status": "In Use",
     "Workbase": "LBU"
   },
@@ -1247,6 +1385,7 @@
     "ID": 230,
     "Model": "13-INCH MACBOOK AIR (M2,2022)",
     "Name": "MUHAMAD FIRDAUS BIN BIDI",
+    "SerialNumber": "Q0P36DKYCW",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -1256,6 +1395,7 @@
     "ID": 231,
     "Model": "Inspiron 3470",
     "Name": "OFFICE DESKTOP",
+    "SerialNumber": "HHMV8X2",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1265,6 +1405,7 @@
     "ID": 232,
     "Model": "Vostro 5471",
     "Name": "FATNIN (INTERN)",
+    "SerialNumber": "GLD9902",
     "Status": "In Use",
     "Workbase": "KSB"
   }
