@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT Inventory Asset Dashboard - Test1</title>
+  <title>RLIT Staff IT Inventory Dashboard</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,6 @@
     .border-accent-blue   { border-left: 5px solid #2563eb !important; }
     .border-accent-green  { border-left: 5px solid #16a34a !important; }
     .border-accent-indigo { border-left: 5px solid #4f46e5 !important; }
-    .border-accent-red    { border-left: 5px solid #dc2626 !important; }
 
     .chart-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 14px; }
     .chart-container { position: relative; width: 100%; height: 210px; }
@@ -66,10 +65,9 @@
     .badge-inuse { background-color: #dbeafe; color: #1e40af; }
     .badge-instock { background-color: #dcfce7; color: #166534; }
     .badge-repair { background-color: #e0e7ff; color: #3730a3; }
-    .badge-decom { background-color: #fee2e2; color: #991b1b; }
     .badge-default { background-color: #f1f5f9; color: #475569; }
 
-    .table-responsive { max-height: 280px; overflow-y: auto; }
+    .table-responsive { max-height: 320px; overflow-y: auto; }
     .custom-table { font-size: 0.85rem; margin-bottom: 0; }
     .custom-table th { background: #f1f5f9; position: sticky; top: 0; z-index: 2; font-weight: 600; text-transform: uppercase; font-size: 0.72rem; color: var(--text-muted); }
 
@@ -92,12 +90,8 @@
           <select id="filter-company" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
         </div>
         <div class="filter-group">
-          <div class="filter-label">Workbase</div>
+          <div class="filter-label">Work Base</div>
           <select id="filter-workbase" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
-        </div>
-        <div class="filter-group">
-          <div class="filter-label">Brand</div>
-          <select id="filter-brand" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
         </div>
         <div class="filter-group">
           <div class="filter-label">Status</div>
@@ -111,89 +105,78 @@
 
     <!-- KPI Cards -->
     <div class="row g-3 mb-3">
-      <div class="col">
+      <div class="col-md-3">
         <div class="dashboard-card border-accent-purple">
-          <div class="kpi-title" style="color: #6b469b;">Total Assets</div>
+          <div class="kpi-title" style="color: #6b469b;">Total Staff Records</div>
           <div class="kpi-value" id="kpi-total">0</div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-3">
         <div class="dashboard-card border-accent-blue">
           <div class="kpi-title" style="color: #2563eb;">In Use</div>
           <div class="kpi-value" id="kpi-inuse">0</div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-3">
         <div class="dashboard-card border-accent-green">
-          <div class="kpi-title" style="color: #16a34a;">In Stock</div>
+          <div class="kpi-title" style="color: #16a34a;">In Stock / Available</div>
           <div class="kpi-value" id="kpi-instock">0</div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-3">
         <div class="dashboard-card border-accent-indigo">
-          <div class="kpi-title" style="color: #4f46e5;">Repair</div>
+          <div class="kpi-title" style="color: #4f46e5;">Under Repair</div>
           <div class="kpi-value" id="kpi-repair">0</div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="dashboard-card border-accent-red">
-          <div class="kpi-title" style="color: #dc2626;">Decom</div>
-          <div class="kpi-value" id="kpi-decom">0</div>
         </div>
       </div>
     </div>
 
-    <!-- Search Bar & Short Table -->
+    <!-- Search Bar & Staff Inventory Table -->
     <div class="dashboard-card mb-3">
       <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
-        <div class="chart-title mb-0">Asset Inventory Quick View</div>
-        <div style="width: 320px; max-width: 100%;">
-          <input type="text" id="filter-search" class="form-control" placeholder="🔍 Search Name, Model, Brand..." oninput="applyFilters()">
+        <div class="chart-title mb-0">RLIT Staff IT Inventory</div>
+        <div style="width: 340px; max-width: 100%;">
+          <input type="text" id="filter-search" class="form-control" placeholder="🔍 Search Staff ID, Name, Email..." oninput="applyFilters()">
         </div>
       </div>
       <div class="table-responsive">
         <table class="table table-hover align-middle custom-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Company</th>
-              <th>Model</th>
-              <th>Brand</th>
-              <th>Workbase</th>
               <th>Status</th>
+              <th>Company</th>
+              <th>Staff ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Designation</th>
+              <th>Work Base</th>
             </tr>
           </thead>
           <tbody id="inventory-table-body">
-            <tr><td colspan="6" class="text-center text-muted py-3">Loading inventory records...</td></tr>
+            <tr><td colspan="7" class="text-center text-muted py-3">Loading inventory records...</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Charts Row -->
+    <!-- Charts Grid -->
     <div class="row g-3">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="dashboard-card">
-          <div class="chart-title">Status Overview</div>
+          <div class="chart-title">Status Split</div>
           <div class="chart-container"><canvas id="chartStatus"></canvas></div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="dashboard-card">
           <div class="chart-title">Company Breakdown</div>
           <div class="chart-container"><canvas id="chartCompany"></canvas></div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="dashboard-card">
-          <div class="chart-title">Workbase Distribution</div>
+          <div class="chart-title">Work Base Distribution</div>
           <div class="chart-container"><canvas id="chartWorkbase"></canvas></div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="dashboard-card">
-          <div class="chart-title">Brand Split</div>
-          <div class="chart-container"><canvas id="chartBrand"></canvas></div>
         </div>
       </div>
     </div>
@@ -201,28 +184,12 @@
 
   <script>
     const CONFIG = { pollIntervalSeconds: 30 };
-    
-    const KNOWN_CHOICES = {
-      Status: ["In Use", "In Stock", "Repair", "Decom"],
-      Company: ["RLEB", "RLSB", "RLS", "RLR", "RLP", "RLLL", "AMS", "APRL", "PMAX"],
-      Workbase: ["KL", "ASB", "HB", "KSB", "LBU", "MY", "TBSB/KMM", "MIRI", "KSA", "IDN"],
-      Brand: ["APPLE", "DELL", "LENOVO", "ACER", "HP", "ASUS", "MSI"]
-    };
-
-    const STATUS_COLORS = {
-      "In Use": "#2563eb",
-      "In Stock": "#16a34a",
-      "Repair": "#4f46e5",
-      "Decom": "#dc2626"
-    };
-
-    const PALETTE = ["#6b469b", "#0284c7", "#0d9488", "#ea580c", "#4f46e5", "#059669", "#d97706", "#475569", "#2563eb", "#b45309"];
+    const PALETTE = ["#6b469b", "#0284c7", "#0d9488", "#ea580c", "#4f46e5", "#059669", "#d97706", "#475569", "#2563eb"];
 
     let rawListItems = [];
     let chartStatusInstance = null;
     let chartCompanyInstance = null;
     let chartWorkbaseInstance = null;
-    let chartBrandInstance = null;
 
     function setDebugStatus(msg, type = "info") {
       const el = document.getElementById("debug-status");
@@ -230,22 +197,21 @@
     }
 
     function parseFieldValue(val) {
-      if (val === null || val === undefined) return "Unknown";
+      if (val === null || val === undefined) return "N/A";
       if (typeof val === 'object' && val.Value) return val.Value;
+      if (typeof val === 'object' && val.Email) return val.Email;
       if (typeof val === 'object' && val.results) return val.results.join(', ');
       const str = String(val).trim();
-      return str === "" ? "Unknown" : str;
+      return str === "" ? "N/A" : str;
     }
 
     async function fetchLocalData() {
-      setDebugStatus("Fetching live data from Test1 GitHub Pages...", "info");
-      
-      // Points specifically to your Test1 repository
+      setDebugStatus("Fetching live data from Test1 repository...", "info");
       const DATA_URL = `https://hajaru-hub.github.io/Test1/data.json?t=${Date.now()}`;
       
       const response = await fetch(DATA_URL, { cache: "no-store" });
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: Unable to fetch data.json from Test1`);
+        throw new Error(`HTTP ${response.status}: Unable to fetch data.json`);
       }
       const raw = await response.json();
       
@@ -262,48 +228,45 @@
         if (items.length === 0) {
           setDebugStatus("Connected to Test1, but <strong>0 items</strong> were found in data.json.", "error");
         } else {
-          setDebugStatus(`Connected! Loaded <strong>${items.length} items</strong> from Test1 repository.`, "success");
+          setDebugStatus(`Connected! Successfully loaded <strong>${items.length} items</strong> from Test1.`, "success");
         }
 
         rawListItems = items.map(item => ({
-          ID: item.ID || item.Id,
-          Name: parseFieldValue(item.Title || item.Name || item.Asset_x0020_Name),
-          Company: parseFieldValue(item.Company),
-          Model: parseFieldValue(item.Model),
-          Brand: parseFieldValue(item.Brand),
-          Workbase: parseFieldValue(item.Workbase),
-          Status: parseFieldValue(item.Status)
+          ID: item.ID || item.No || item.Id,
+          Status: parseFieldValue(item.Status || item.STATUS),
+          Company: parseFieldValue(item.Company || item.COMPANY),
+          StaffID: parseFieldValue(item.StaffID || item.STAFF_x0020_ID || item['STAFF ID']),
+          Name: parseFieldValue(item.Name || item.NAME || item.Title),
+          Email: parseFieldValue(item.Email || item.EMAIL),
+          Designation: parseFieldValue(item.Designation || item.DESIGNATION),
+          Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE)
         }));
 
         populateFilterDropdowns(rawListItems);
         applyFilters();
       } catch (error) {
         console.error(error);
-        setDebugStatus(`<strong>Connection Error:</strong> ${error.message}. Confirm GitHub Pages deployment is active for Test1.`, "error");
+        setDebugStatus(`<strong>Connection Error:</strong> ${error.message}. Ensure GitHub Pages deployment is active.`, "error");
       }
     }
 
     function populateFilterDropdowns(items) {
       const cSel = document.getElementById("filter-company");
       const wSel = document.getElementById("filter-workbase");
-      const bSel = document.getElementById("filter-brand");
       const sSel = document.getElementById("filter-status");
 
-      const currC = cSel.value, currW = wSel.value, currB = bSel.value, currS = sSel.value;
+      const currC = cSel.value, currW = wSel.value, currS = sSel.value;
 
-      const companies = ["All", ...new Set([...KNOWN_CHOICES.Company, ...items.map(i => i.Company)])].sort();
-      const workbases = ["All", ...new Set([...KNOWN_CHOICES.Workbase, ...items.map(i => i.Workbase)])].sort();
-      const brands    = ["All", ...new Set([...KNOWN_CHOICES.Brand, ...items.map(i => i.Brand)])].sort();
-      const statuses  = ["All", ...new Set([...KNOWN_CHOICES.Status, ...items.map(i => i.Status)])].sort();
+      const companies = ["All", ...new Set(items.map(i => i.Company))].sort();
+      const workbases = ["All", ...new Set(items.map(i => i.Workbase))].sort();
+      const statuses  = ["All", ...new Set(items.map(i => i.Status))].sort();
 
       cSel.innerHTML = companies.map(c => `<option value="${c}">${c}</option>`).join("");
       wSel.innerHTML = workbases.map(w => `<option value="${w}">${w}</option>`).join("");
-      bSel.innerHTML = brands.map(b => `<option value="${b}">${b}</option>`).join("");
       sSel.innerHTML = statuses.map(s => `<option value="${s}">${s}</option>`).join("");
 
       if (companies.includes(currC)) cSel.value = currC;
       if (workbases.includes(currW)) wSel.value = currW;
-      if (brands.includes(currB))    bSel.value = currB;
       if (statuses.includes(currS))  sSel.value = currS;
     }
 
@@ -311,23 +274,22 @@
       const searchVal = document.getElementById("filter-search").value.toLowerCase().trim();
       const cVal = document.getElementById("filter-company").value;
       const wVal = document.getElementById("filter-workbase").value;
-      const bVal = document.getElementById("filter-brand").value;
       const sVal = document.getElementById("filter-status").value;
 
       const filtered = rawListItems.filter(item => {
         const textMatch = !searchVal || 
           item.Name.toLowerCase().includes(searchVal) ||
+          item.StaffID.toLowerCase().includes(searchVal) ||
+          item.Email.toLowerCase().includes(searchVal) ||
+          item.Designation.toLowerCase().includes(searchVal) ||
           item.Company.toLowerCase().includes(searchVal) ||
-          item.Model.toLowerCase().includes(searchVal) ||
-          item.Brand.toLowerCase().includes(searchVal) ||
           item.Workbase.toLowerCase().includes(searchVal);
 
         const cMatch = cVal === "All" || item.Company === cVal;
         const wMatch = wVal === "All" || item.Workbase === wVal;
-        const bMatch = bVal === "All" || item.Brand === bVal;
         const sMatch = sVal === "All" || item.Status === sVal;
 
-        return textMatch && cMatch && wMatch && bMatch && sMatch;
+        return textMatch && cMatch && wMatch && sMatch;
       });
 
       updateKPIs(filtered);
@@ -339,7 +301,6 @@
       document.getElementById("filter-search").value = "";
       document.getElementById("filter-company").value = "All";
       document.getElementById("filter-workbase").value = "All";
-      document.getElementById("filter-brand").value = "All";
       document.getElementById("filter-status").value = "All";
       applyFilters();
     }
@@ -347,41 +308,40 @@
     function updateKPIs(items) {
       document.getElementById("kpi-total").innerText = items.length;
       document.getElementById("kpi-inuse").innerText = items.filter(i => i.Status.toLowerCase() === "in use").length;
-      document.getElementById("kpi-instock").innerText = items.filter(i => i.Status.toLowerCase() === "in stock").length;
+      document.getElementById("kpi-instock").innerText = items.filter(i => ["in stock", "available"].includes(i.Status.toLowerCase())).length;
       document.getElementById("kpi-repair").innerText = items.filter(i => i.Status.toLowerCase() === "repair").length;
-      document.getElementById("kpi-decom").innerText = items.filter(i => ["decom", "decommissioned"].includes(i.Status.toLowerCase())).length;
     }
 
     function getBadgeClass(status) {
       const s = status.toLowerCase();
       if (s === "in use") return "badge-inuse";
-      if (s === "in stock") return "badge-instock";
+      if (s === "in stock" || s === "available") return "badge-instock";
       if (s === "repair") return "badge-repair";
-      if (s === "decom") return "badge-decom";
       return "badge-default";
     }
 
     function renderTable(items) {
       const tbody = document.getElementById("inventory-table-body");
       if (items.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="text-center text-muted py-3">No matching records found</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted py-3">No matching staff records found</td></tr>`;
         return;
       }
 
       tbody.innerHTML = items.map(item => `
         <tr>
-          <td class="fw-bold">${item.Name}</td>
-          <td>${item.Company}</td>
-          <td>${item.Model}</td>
-          <td>${item.Brand}</td>
-          <td>${item.Workbase}</td>
           <td><span class="badge-status ${getBadgeClass(item.Status)}">${item.Status}</span></td>
+          <td>${item.Company}</td>
+          <td class="fw-bold">${item.StaffID}</td>
+          <td class="fw-bold">${item.Name}</td>
+          <td>${item.Email}</td>
+          <td>${item.Designation}</td>
+          <td>${item.Workbase}</td>
         </tr>
       `).join("");
     }
 
     function countByProperty(items, prop) {
-      return items.reduce((acc, curr) => { const v = curr[prop] || "Unknown"; acc[v] = (acc[v] || 0) + 1; return acc; }, {});
+      return items.reduce((acc, curr) => { const v = curr[prop] || "N/A"; acc[v] = (acc[v] || 0) + 1; return acc; }, {});
     }
 
     function renderCharts(items) {
@@ -389,13 +349,11 @@
       const numberFont = { family: "'Lora', Georgia, serif", size: 10, weight: "600" };
 
       const statusCounts = countByProperty(items, "Status");
-      const statusLabels = Object.keys(statusCounts);
-      const statusColors = statusLabels.map(lbl => STATUS_COLORS[lbl] || "#64748b");
       const ctxStatus = document.getElementById("chartStatus").getContext("2d");
       if (chartStatusInstance) chartStatusInstance.destroy();
       chartStatusInstance = new Chart(ctxStatus, {
         type: "doughnut",
-        data: { labels: statusLabels, datasets: [{ data: Object.values(statusCounts), backgroundColor: statusColors, borderWidth: 2 }] },
+        data: { labels: Object.keys(statusCounts), datasets: [{ data: Object.values(statusCounts), backgroundColor: ["#2563eb", "#16a34a", "#4f46e5", "#dc2626"], borderWidth: 2 }] },
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: labelFont, color: "#0f172a", boxWidth: 12 } } } }
       });
 
@@ -415,15 +373,6 @@
         type: "pie",
         data: { labels: Object.keys(wbCounts), datasets: [{ data: Object.values(wbCounts), backgroundColor: PALETTE.slice(0, Object.keys(wbCounts).length), borderWidth: 2 }] },
         options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { font: labelFont, color: "#0f172a", boxWidth: 12 } } } }
-      });
-
-      const brandCounts = countByProperty(items, "Brand");
-      const ctxBrand = document.getElementById("chartBrand").getContext("2d");
-      if (chartBrandInstance) chartBrandInstance.destroy();
-      chartBrandInstance = new Chart(ctxBrand, {
-        type: "bar",
-        data: { labels: Object.keys(brandCounts), datasets: [{ data: Object.values(brandCounts), backgroundColor: "#0284c7", borderRadius: 4 }] },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { ticks: { stepSize: 1, font: numberFont } }, x: { ticks: { font: labelFont } } } }
       });
     }
 
