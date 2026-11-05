@@ -1408,5 +1408,15 @@
     "SerialNumber": "GLD9902",
     "Status": "In Use",
     "Workbase": "KSB"
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLEB",
+    "ID": 236,
+    "Model": "vostro",
+    "Name": "HAJAR",
+    "SerialNumber": "HGSK89YHJ",
+    "Status": "Repair",
+    "Workbase": "KL"
   }
 ]}
