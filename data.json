@@ -1408,5 +1408,15 @@
     "SerialNumber": "GLD9902",
     "Status": "In Use",
     "Workbase": "KSB"
+  },
+  {
+    "Brand": "SAMSUNG",
+    "Company": "RLSB",
+    "ID": 237,
+    "Model": "K202HQL",
+    "Name": "OFFICE DESKTOP",
+    "SerialNumber": "MMT0CSM0029200E59D850B",
+    "Status": "In Use",
+    "Workbase": "KSB"
   }
 ]}
