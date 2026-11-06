@@ -1438,5 +1438,15 @@
     "SerialNumber": "ZZMQH4ZN700397Z",
     "Status": "In Use",
     "Workbase": "KSB"
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLSB",
+    "ID": 240,
+    "Model": null,
+    "Name": "HADZIQ IZZARD BIN NADZIRUDIN",
+    "SerialNumber": null,
+    "Status": "In Stock",
+    "Workbase": "LBU"
   }
 ]}
