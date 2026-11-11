@@ -1500,7 +1500,7 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
+    "Brand": "APPLE",
     "Company": "RLEB",
     "ID": 246,
     "Model": null,
@@ -1510,7 +1510,7 @@
     "Workbase": null
   },
   {
-    "Brand": null,
+    "Brand": "DELL",
     "Company": "RLEB",
     "ID": 247,
     "Model": null,
@@ -1520,7 +1520,7 @@
     "Workbase": null
   },
   {
-    "Brand": null,
+    "Brand": "DELL",
     "Company": "RLSB",
     "ID": 248,
     "Model": null,
