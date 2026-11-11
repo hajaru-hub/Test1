@@ -1,8 +1,13 @@
-name: Sync SharePoint IT Inventory
+name: sync
 
 on:
   repository_dispatch:
-    types: [updateinventory]
+    types: [updateinventory, sync-data]
+  workflow_dispatch:
+
+concurrency:
+  group: sync-data-job
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -13,17 +18,45 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Save data.json safely
-        env:
-          PAYLOAD_DATA: ${{ toJson(github.event.client_payload.data) }}
-        run: |
-          echo "{\"data\": $PAYLOAD_DATA}" > data.json
+      - name: Save data.json safely from payload
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const payload = context.payload.client_payload;
+
+            if (!payload) {
+              console.log("No client_payload found (manual trigger). Keeping existing data.json.");
+              return;
+            }
+
+            // Automatically extracts data whether PA sends { "data": [...] } or raw [...]
+            let dataToSave = (payload && payload.data !== undefined) ? payload.data : payload;
+
+            // Parses payload if sent as a JSON string
+            if (typeof dataToSave === 'string') {
+              try {
+                dataToSave = JSON.parse(dataToSave);
+              } catch (e) {
+                console.log("Payload data is raw text:", e);
+              }
+            }
+
+            fs.writeFileSync('data.json', JSON.stringify(dataToSave, null, 2));
+            console.log("Successfully wrote data.json");
 
       - name: Commit and Push changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git commit -m "Auto update" || exit 0
-          git push
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Auto update data.json [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes detected in data.json"
+          fi
