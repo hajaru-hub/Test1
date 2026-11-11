@@ -1,40 +1,29 @@
-name: sync
+name: Sync SharePoint IT Inventory
 
 on:
   repository_dispatch:
-    types: [sync-data]
-  workflow_dispatch:
-
-concurrency:
-  group: sync-data-job
-  cancel-in-progress: false
+    types: [updateinventory]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Save data.json from payload
+      - name: Save data.json safely
+        env:
+          PAYLOAD_DATA: ${{ toJson(github.event.client_payload.data) }}
         run: |
-          if [ -n '${{ github.event.client_payload.data }}' ]; then
-            echo '${{ github.event.client_payload.data }}' > data.json
-          fi
+          echo "{\"data\": $PAYLOAD_DATA}" > data.json
 
       - name: Commit and Push changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
-          if ! git diff-index --quiet HEAD; then
-            git commit -m "Auto update data.json [skip ci]"
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes detected in data.json"
-          fi
+          git commit -m "Auto update" || exit 0
+          git push
