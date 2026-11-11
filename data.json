@@ -1501,7 +1501,7 @@
   },
   {
     "Brand": null,
-    "Company": null,
+    "Company": "RLLL",
     "ID": 246,
     "Model": null,
     "Name": null,
@@ -1516,7 +1516,17 @@
     "Model": null,
     "Name": null,
     "SerialNumber": null,
-    "Status": "In Use",
+    "Status": "In Stock",
+    "Workbase": null
+  },
+  {
+    "Brand": null,
+    "Company": null,
+    "ID": 248,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": "In Stock",
     "Workbase": null
   }
 ]}
