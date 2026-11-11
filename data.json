@@ -1488,5 +1488,25 @@
     "SerialNumber": "D33N4P2",
     "Status": "In Stock",
     "Workbase": null
+  },
+  {
+    "Brand": "APPLE",
+    "Company": "RLEB",
+    "ID": 245,
+    "Model": "MacBook Air 13' - 2019",
+    "Name": "FOR IT USE",
+    "SerialNumber": "FVFYN0HWLYWM",
+    "Status": "In Stock",
+    "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Company": null,
+    "ID": 246,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]}
