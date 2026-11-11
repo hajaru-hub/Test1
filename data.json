@@ -1478,5 +1478,15 @@
     "SerialNumber": "FVFDX46DQ6L5",
     "Status": "In Stock",
     "Workbase": null
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLEB",
+    "ID": 244,
+    "Model": "VOSTRO 5481",
+    "Name": "LAPTOP SPARE 01",
+    "SerialNumber": "D33N4P2",
+    "Status": "In Stock",
+    "Workbase": null
   }
 ]}
