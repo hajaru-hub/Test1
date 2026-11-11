@@ -1458,5 +1458,15 @@
     "SerialNumber": "3X1HBB4",
     "Status": "In Stock",
     "Workbase": "LBU"
+  },
+  {
+    "Brand": "APPLE",
+    "Company": "RLSB",
+    "ID": 242,
+    "Model": "MACBook Air 13' - 2019",
+    "Name": "LAPTOP SPARE 02",
+    "SerialNumber": "FVFZ407FLYWN",
+    "Status": "In Stock",
+    "Workbase": null
   }
 ]}
