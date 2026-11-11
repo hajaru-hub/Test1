@@ -1505,7 +1505,7 @@
     "ID": 246,
     "Model": "Imac 21 - 2019",
     "Name": "IMAC IT DEPT",
-    "SerialNumber": null,
+    "SerialNumber": "C02ZN0E4JWF1",
     "Status": "In Stock",
     "Workbase": null
   },
@@ -1515,7 +1515,7 @@
     "ID": 247,
     "Model": "VOSTRO 5490",
     "Name": "LAPTOP SPARE 02",
-    "SerialNumber": null,
+    "SerialNumber": "D7M5HW2",
     "Status": "In Stock",
     "Workbase": null
   },
@@ -1523,7 +1523,7 @@
     "Brand": "DELL",
     "Company": "RLSB",
     "ID": 248,
-    "Model": null,
+    "Model": "LATITUDE 3450",
     "Name": "LAPTOP SPARE 01",
     "SerialNumber": null,
     "Status": "In Stock",
