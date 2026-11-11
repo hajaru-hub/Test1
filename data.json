@@ -1506,7 +1506,17 @@
     "Model": null,
     "Name": null,
     "SerialNumber": null,
-    "Status": null,
+    "Status": "In Stock",
+    "Workbase": null
+  },
+  {
+    "Brand": null,
+    "Company": null,
+    "ID": 247,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": "In Use",
     "Workbase": null
   }
 ]}
