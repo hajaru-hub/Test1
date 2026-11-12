@@ -1520,12 +1520,12 @@
     "Workbase": null
   },
   {
-    "Brand": null,
+    "Brand": "DELL",
     "Company": "RLSB",
     "ID": 250,
-    "Model": null,
+    "Model": "Inspiron 3470",
     "Name": "OFFICE DESKTOP - LBU",
-    "SerialNumber": null,
+    "SerialNumber": "DHG19X2 ",
     "Status": "In Stock",
     "Workbase": "LBU"
   },
