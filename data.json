@@ -1528,5 +1528,15 @@
     "SerialNumber": null,
     "Status": "In Stock",
     "Workbase": "LBU"
+  },
+  {
+    "Brand": null,
+    "Company": null,
+    "ID": 252,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]
