@@ -1518,5 +1518,15 @@
     "SerialNumber": "C2RJW84",
     "Status": "In Stock",
     "Workbase": null
+  },
+  {
+    "Brand": null,
+    "Company": "RLSB",
+    "ID": 250,
+    "Model": null,
+    "Name": "OFFICE DESKTOP - LBU",
+    "SerialNumber": null,
+    "Status": "In Stock",
+    "Workbase": "LBU"
   }
 ]
