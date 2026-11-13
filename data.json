@@ -1528,5 +1528,15 @@
     "SerialNumber": "FVFDX46DQ6L5",
     "Status": "In Stock",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Company": null,
+    "ID": 254,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]
