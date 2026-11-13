@@ -950,12 +950,12 @@
     "Workbase": "ASB"
   },
   {
-    "Brand": "APPLE",
+    "Brand": "DELL",
     "Company": "RLSB",
     "ID": 186,
-    "Model": "MACBOOK AIR , (13-INCH , 2017)",
+    "Model": "Latitude 3450",
     "Name": "MUHAMMAD SYAAFIQ BIN SUHARI",
-    "SerialNumber": "FVFYK1QYJ1WT",
+    "SerialNumber": "7YRJW84",
     "Status": "In Use",
     "Workbase": "KSB"
   },
@@ -1460,16 +1460,6 @@
     "Workbase": "KL"
   },
   {
-    "Brand": "DELL",
-    "Company": "RLEB",
-    "ID": 245,
-    "Model": "MacBook Air 13' - 2019",
-    "Name": null,
-    "SerialNumber": "FVFYN0HWLYWM",
-    "Status": "In Stock",
-    "Workbase": "KL"
-  },
-  {
     "Brand": "APPLE",
     "Company": "RLEB",
     "ID": 246,
@@ -1508,16 +1498,6 @@
     "SerialNumber": "DHG19X2 ",
     "Status": "In Stock",
     "Workbase": "LBU"
-  },
-  {
-    "Brand": null,
-    "Company": null,
-    "ID": 252,
-    "Model": null,
-    "Name": null,
-    "SerialNumber": null,
-    "Status": null,
-    "Workbase": null
   },
   {
     "Brand": "APPLE",
