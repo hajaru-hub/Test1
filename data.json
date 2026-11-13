@@ -1530,12 +1530,12 @@
     "Workbase": null
   },
   {
-    "Brand": null,
+    "Brand": "APPLE",
     "Company": "RLEB",
     "ID": 253,
-    "Model": null,
+    "Model": "MacBook Air (M1,2020)",
     "Name": "LAPTOP SPARE 03",
-    "SerialNumber": null,
+    "SerialNumber": "FVFDX46DQ6L5",
     "Status": "In Stock",
     "Workbase": "KL"
   }
