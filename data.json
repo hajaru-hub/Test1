@@ -1528,5 +1528,15 @@
     "SerialNumber": null,
     "Status": null,
     "Workbase": null
+  },
+  {
+    "Brand": null,
+    "Company": "RLEB",
+    "ID": 253,
+    "Model": null,
+    "Name": "LAPTOP SPARE 03",
+    "SerialNumber": null,
+    "Status": "In Stock",
+    "Workbase": "KL"
   }
 ]
