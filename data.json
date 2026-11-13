@@ -1441,13 +1441,13 @@
   },
   {
     "Brand": "APPLE",
-    "Company": "RLSB",
+    "Company": "RLEB",
     "ID": 242,
     "Model": "MACBook Air 13' - 2019",
-    "Name": "LAPTOP SPARE 02",
+    "Name": "MAC IT DEPT",
     "SerialNumber": "FVFZ407FLYWN",
     "Status": "In Stock",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": "APPLE",
@@ -1467,7 +1467,7 @@
     "Name": "LAPTOP SPARE 01",
     "SerialNumber": "D33N4P2",
     "Status": "In Stock",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": "DELL",
@@ -1487,7 +1487,7 @@
     "Name": "IMAC IT DEPT",
     "SerialNumber": "C02ZN0E4JWF1",
     "Status": "In Stock",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": "DELL",
@@ -1497,7 +1497,7 @@
     "Name": "LAPTOP SPARE 02",
     "SerialNumber": "D7M5HW2",
     "Status": "In Stock",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": "DELL",
@@ -1507,7 +1507,7 @@
     "Name": "LAPTOP SPARE 01",
     "SerialNumber": "C2RJW84",
     "Status": "In Stock",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": "DELL",
