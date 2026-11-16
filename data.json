@@ -1518,5 +1518,15 @@
     "SerialNumber": "3NRZ9T3",
     "Status": "In Stock",
     "Workbase": "KSB"
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLSB",
+    "ID": 256,
+    "Model": "Latitude 5430 Rugged",
+    "Name": "TOUGHBOOK 02",
+    "SerialNumber": "FBDDD54",
+    "Status": "In Stock",
+    "Workbase": "KSB"
   }
 ]
