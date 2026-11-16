@@ -1508,5 +1508,15 @@
     "SerialNumber": "FVFDX46DQ6L5",
     "Status": "In Stock",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLSB",
+    "ID": 255,
+    "Model": "Latitude 5430 Rugged",
+    "Name": "TOUGHBOOK 01",
+    "SerialNumber": "3NRZ9T3",
+    "Status": "In Stock",
+    "Workbase": "KSB"
   }
 ]
