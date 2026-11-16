@@ -1516,7 +1516,7 @@
     "Model": "Latitude 5430 Rugged",
     "Name": "TOUGHBOOK 01",
     "SerialNumber": "3NRZ9T3",
-    "Status": "In Stock",
+    "Status": "In Use",
     "Workbase": "KSB"
   },
   {
@@ -1526,7 +1526,7 @@
     "Model": "Latitude 5430 Rugged",
     "Name": "TOUGHBOOK 02",
     "SerialNumber": "FBDDD54",
-    "Status": "In Stock",
+    "Status": "In Use",
     "Workbase": "KSB"
   }
 ]
