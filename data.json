@@ -1340,12 +1340,12 @@
     "Workbase": "MY"
   },
   {
-    "Brand": null,
+    "Brand": "DELL",
     "Company": "RLSB",
     "ID": 228,
-    "Model": null,
+    "Model": "Vostro 5490",
     "Name": "HUONG WEN KIAT",
-    "SerialNumber": null,
+    "SerialNumber": "BNNFRT2",
     "Status": "In Use",
     "Workbase": "MY"
   },
