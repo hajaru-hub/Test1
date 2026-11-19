@@ -1528,5 +1528,15 @@
     "SerialNumber": "FBDDD54",
     "Status": "In Use",
     "Workbase": "KSB"
+  },
+  {
+    "Brand": "DELL",
+    "Company": "RLSB TH",
+    "ID": 257,
+    "Model": "Latitude 3450",
+    "Name": "Sukhum Saiyawat",
+    "SerialNumber": "C2RJW84",
+    "Status": "In Use",
+    "Workbase": null
   }
 ]
