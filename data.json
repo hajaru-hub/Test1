@@ -360,16 +360,6 @@
     "Workbase": "KL"
   },
   {
-    "Brand": "DELL",
-    "Company": "AMS",
-    "ID": 100,
-    "Model": "Vostro 5490",
-    "Name": "SPARE",
-    "SerialNumber": "9P7NQT2",
-    "Status": "In Use",
-    "Workbase": "KSB"
-  },
-  {
     "Brand": "HP",
     "Company": "RLS",
     "ID": 101,
@@ -1482,16 +1472,6 @@
   {
     "Brand": "DELL",
     "Company": "RLSB",
-    "ID": 248,
-    "Model": "LATITUDE 3450",
-    "Name": "LAPTOP SPARE 01",
-    "SerialNumber": "C2RJW84",
-    "Status": "In Stock",
-    "Workbase": "KL"
-  },
-  {
-    "Brand": "DELL",
-    "Company": "RLSB",
     "ID": 250,
     "Model": "Inspiron 3470",
     "Name": "OFFICE DESKTOP - LBU",
@@ -1528,16 +1508,6 @@
     "SerialNumber": "FBDDD54",
     "Status": "In Use",
     "Workbase": "KSB"
-  },
-  {
-    "Brand": "DELL",
-    "Company": "RLSB TH",
-    "ID": 257,
-    "Model": "Latitude 3450",
-    "Name": "Sukhum Saiyawat",
-    "SerialNumber": "C2RJW84",
-    "Status": "In Use",
-    "Workbase": null
   },
   {
     "Brand": "DELL",
