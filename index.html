@@ -37,7 +37,7 @@
       height: 100%;
     }
 
-    .filter-group { flex: 1; min-width: 130px; }
+    .filter-group { flex: 1; min-width: 120px; }
     .filter-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; }
     .form-select, .form-control { background: #fff; border-radius: 10px; border: 1px solid rgba(107, 70, 155, 0.18); padding: 7px 12px; font-size: 0.88rem; font-weight: 600; }
     
@@ -118,6 +118,14 @@
         <div class="filter-group">
           <div class="filter-label">Category</div>
           <select id="filter-category" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Asset Age</div>
+          <select id="filter-age" class="form-select" onchange="applyFilters()">
+            <option value="All">All</option>
+            <option value="Over5">&gt; 5 Years</option>
+            <option value="Under5">&le; 5 Years</option>
+          </select>
         </div>
         <div class="ms-auto">
           <button class="btn btn-reset text-uppercase" onclick="resetFilters()">Reset Filters</button>
@@ -229,6 +237,17 @@
       return (str === "" || str === "null" || str === "undefined") ? "N/A" : str;
     }
 
+    function checkOver5Years(rawDateVal) {
+      const dateStr = parseFieldValue(rawDateVal);
+      if (dateStr === "N/A") return false;
+      const purchaseDate = new Date(dateStr);
+      if (isNaN(purchaseDate.getTime())) return false;
+
+      const fiveYearsAgo = new Date();
+      fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+      return purchaseDate < fiveYearsAgo;
+    }
+
     async function fetchLocalData() {
       const DATA_URL = `https://hajaru-hub.github.io/Test1/data.json?t=${Date.now()}`;
       const response = await fetch(DATA_URL, { cache: "no-store" });
@@ -248,17 +267,22 @@
         const items = await fetchLocalData();
 
         rawListItems = items
-          .map(item => ({
-            ID: item.ID || item.No || item.Id,
-            Status: parseFieldValue(item.Status || item.STATUS),
-            Company: parseFieldValue(item.Company || item.COMPANY),
-            Name: parseFieldValue(item.Name || item.NAME || item.Title),
-            Brand: parseFieldValue(item.Brand || item.BRAND),
-            Model: parseFieldValue(item.Model || item.MODEL),
-            SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
-            Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base),
-            Category: parseFieldValue(item.Category || item.CATEGORY)
-          }))
+          .map(item => {
+            const rawDate = item.DatePurchase || item.DATE_x0020_PURCHASE || item['DATE PURCHASE'] || item.Date_x0020_Purchase;
+            return {
+              ID: item.ID || item.No || item.Id,
+              Status: parseFieldValue(item.Status || item.STATUS),
+              Company: parseFieldValue(item.Company || item.COMPANY),
+              Name: parseFieldValue(item.Name || item.NAME || item.Title),
+              Brand: parseFieldValue(item.Brand || item.BRAND),
+              Model: parseFieldValue(item.Model || item.MODEL),
+              SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
+              Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base),
+              Category: parseFieldValue(item.Category || item.CATEGORY),
+              DatePurchase: parseFieldValue(rawDate),
+              isOver5Years: checkOver5Years(rawDate)
+            };
+          })
           // Automatically skips ghost/blank SharePoint rows
           .filter(item => !(item.Name === "N/A" && item.SerialNumber === "N/A" && item.Brand === "N/A"));
 
@@ -338,6 +362,7 @@
       const wVal      = document.getElementById("filter-workbase").value;
       const sVal      = document.getElementById("filter-status").value;
       const catVal    = document.getElementById("filter-category").value;
+      const ageVal    = document.getElementById("filter-age").value;
 
       const filtered = rawListItems.filter(item => {
         const textMatch = !searchVal || 
@@ -352,8 +377,11 @@
         const wMatch   = wVal === "All" || item.Workbase === wVal;
         const sMatch   = sVal === "All" || item.Status === sVal;
         const catMatch = catVal === "All" || item.Category === catVal;
+        const ageMatch = ageVal === "All" ||
+          (ageVal === "Over5" && item.isOver5Years) ||
+          (ageVal === "Under5" && !item.isOver5Years && item.DatePurchase !== "N/A");
 
-        return textMatch && cMatch && wMatch && sMatch && catMatch;
+        return textMatch && cMatch && wMatch && sMatch && catMatch && ageMatch;
       });
 
       updateKPIs(filtered);
@@ -367,6 +395,7 @@
       document.getElementById("filter-workbase").value = "All";
       document.getElementById("filter-status").value = "All";
       document.getElementById("filter-category").value = "All";
+      document.getElementById("filter-age").value = "All";
       applyFilters();
     }
 
