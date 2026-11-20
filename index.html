@@ -123,8 +123,8 @@
           <div class="filter-label">Asset Age</div>
           <select id="filter-age" class="form-select" onchange="applyFilters()">
             <option value="All">All</option>
-            <option value="Over5">&gt; 5 Years</option>
-            <option value="Under5">&le; 5 Years</option>
+            <option value="Over5">Over 5 Years</option>
+            <option value="Under5">Under 5 Years</option>
           </select>
         </div>
         <div class="ms-auto">
@@ -237,15 +237,19 @@
       return (str === "" || str === "null" || str === "undefined") ? "N/A" : str;
     }
 
-    function checkOver5Years(rawDateVal) {
+    function parsePurchaseDate(rawDateVal) {
       const dateStr = parseFieldValue(rawDateVal);
-      if (dateStr === "N/A") return false;
-      const purchaseDate = new Date(dateStr);
-      if (isNaN(purchaseDate.getTime())) return false;
+      if (dateStr === "N/A") return null;
 
-      const fiveYearsAgo = new Date();
-      fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
-      return purchaseDate < fiveYearsAgo;
+      // Supports DD/MM/YYYY or DD-MM-YYYY strings if present
+      const dmyMatch = dateStr.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+      if (dmyMatch) {
+        const parsed = new Date(Number(dmyMatch[3]), Number(dmyMatch[2]) - 1, Number(dmyMatch[1]));
+        return isNaN(parsed.getTime()) ? null : parsed;
+      }
+
+      const parsed = new Date(dateStr);
+      return isNaN(parsed.getTime()) ? null : parsed;
     }
 
     async function fetchLocalData() {
@@ -265,10 +269,14 @@
     async function loadData() {
       try {
         const items = await fetchLocalData();
+        const fiveYearsAgo = new Date();
+        fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
 
         rawListItems = items
           .map(item => {
-            const rawDate = item.DatePurchase || item.DATE_x0020_PURCHASE || item['DATE PURCHASE'] || item.Date_x0020_Purchase;
+            const rawDate = item.DatePurchase || item.DATE_x0020_PURCHASE || item['DATE PURCHASE'] || item.Date_x0020_Purchase || item.PurchaseDate;
+            const parsedDate = parsePurchaseDate(rawDate);
+
             return {
               ID: item.ID || item.No || item.Id,
               Status: parseFieldValue(item.Status || item.STATUS),
@@ -279,8 +287,8 @@
               SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
               Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base),
               Category: parseFieldValue(item.Category || item.CATEGORY),
-              DatePurchase: parseFieldValue(rawDate),
-              isOver5Years: checkOver5Years(rawDate)
+              hasValidDate: parsedDate !== null,
+              isOver5Years: parsedDate !== null && parsedDate < fiveYearsAgo
             };
           })
           // Automatically skips ghost/blank SharePoint rows
@@ -378,8 +386,8 @@
         const sMatch   = sVal === "All" || item.Status === sVal;
         const catMatch = catVal === "All" || item.Category === catVal;
         const ageMatch = ageVal === "All" ||
-          (ageVal === "Over5" && item.isOver5Years) ||
-          (ageVal === "Under5" && !item.isOver5Years && item.DatePurchase !== "N/A");
+          (ageVal === "Over5" && item.hasValidDate && item.isOver5Years) ||
+          (ageVal === "Under5" && item.hasValidDate && !item.isOver5Years);
 
         return textMatch && cMatch && wMatch && sMatch && catMatch && ageMatch;
       });
