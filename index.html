@@ -37,7 +37,7 @@
       height: 100%;
     }
 
-    .filter-group { flex: 1; min-width: 140px; }
+    .filter-group { flex: 1; min-width: 130px; }
     .filter-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; }
     .form-select, .form-control { background: #fff; border-radius: 10px; border: 1px solid rgba(107, 70, 155, 0.18); padding: 7px 12px; font-size: 0.88rem; font-weight: 600; }
     
@@ -58,6 +58,30 @@
     .border-accent-blue   { border-left: 5px solid #2563eb !important; }
     .border-accent-green  { border-left: 5px solid #16a34a !important; }
     .border-accent-indigo { border-left: 5px solid #4f46e5 !important; }
+
+    /* Duplicate Serial Alert (Hidden automatically when no duplicates exist) */
+    .duplicate-banner {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-left: 5px solid #dc2626;
+      border-radius: 12px;
+      padding: 10px 16px;
+      font-size: 0.82rem;
+      color: #991b1b;
+    }
+    .dup-chip {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #fca5a5;
+      border-radius: 8px;
+      padding: 2px 8px;
+      font-weight: 700;
+      font-size: 0.76rem;
+      margin: 2px 4px 2px 0;
+      cursor: pointer;
+    }
+    .dup-chip:hover { background: #fecaca; }
 
     .chart-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; margin-bottom: 14px; }
     .chart-container { position: relative; width: 100%; height: 210px; }
@@ -91,11 +115,18 @@
           <div class="filter-label">Status</div>
           <select id="filter-status" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
         </div>
+        <div class="filter-group">
+          <div class="filter-label">Category</div>
+          <select id="filter-category" class="form-select" onchange="applyFilters()"><option value="All">All</option></select>
+        </div>
         <div class="ms-auto">
           <button class="btn btn-reset text-uppercase" onclick="resetFilters()">Reset Filters</button>
         </div>
       </div>
     </div>
+
+    <!-- Duplicate Serial Alert (Hidden automatically if no duplicates exist) -->
+    <div id="duplicate-alert" class="duplicate-banner mb-3 d-none"></div>
 
     <!-- KPI Cards -->
     <div class="row g-3 mb-3">
@@ -181,6 +212,7 @@
     const PALETTE = ["#6b469b", "#0284c7", "#0d9488", "#ea580c", "#4f46e5", "#059669", "#d97706", "#475569", "#2563eb"];
 
     let rawListItems = [];
+    let duplicateSerialSet = new Set();
     let chartStatusInstance = null;
     let chartCompanyInstance = null;
     let chartWorkbaseInstance = null;
@@ -215,17 +247,22 @@
       try {
         const items = await fetchLocalData();
 
-        rawListItems = items.map(item => ({
-          ID: item.ID || item.No || item.Id,
-          Status: parseFieldValue(item.Status || item.STATUS),
-          Company: parseFieldValue(item.Company || item.COMPANY),
-          Name: parseFieldValue(item.Name || item.NAME || item.Title),
-          Brand: parseFieldValue(item.Brand || item.BRAND),
-          Model: parseFieldValue(item.Model || item.MODEL),
-          SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
-          Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base)
-        }));
+        rawListItems = items
+          .map(item => ({
+            ID: item.ID || item.No || item.Id,
+            Status: parseFieldValue(item.Status || item.STATUS),
+            Company: parseFieldValue(item.Company || item.COMPANY),
+            Name: parseFieldValue(item.Name || item.NAME || item.Title),
+            Brand: parseFieldValue(item.Brand || item.BRAND),
+            Model: parseFieldValue(item.Model || item.MODEL),
+            SerialNumber: parseFieldValue(item.SerialNumber || item.SERIAL_x0020_NUMBER || item['SERIAL NUMBER'] || item.SerialNo || item['SERIAL NO'] || item.Serial_x0020_Number),
+            Workbase: parseFieldValue(item.Workbase || item.WorkBase || item['WORK BASE'] || item.WORK_x0020_BASE || item.Work_x0020_Base),
+            Category: parseFieldValue(item.Category || item.CATEGORY)
+          }))
+          // Automatically skips ghost/blank SharePoint rows
+          .filter(item => !(item.Name === "N/A" && item.SerialNumber === "N/A" && item.Brand === "N/A"));
 
+        detectDuplicateSerials(rawListItems);
         populateFilterDropdowns(rawListItems);
         applyFilters();
       } catch (error) {
@@ -233,31 +270,74 @@
       }
     }
 
+    function detectDuplicateSerials(items) {
+      const alertBox = document.getElementById("duplicate-alert");
+      const counts = {};
+      const displayLabel = {};
+
+      items.forEach(item => {
+        const sn = item.SerialNumber.trim();
+        const normalized = sn.toUpperCase();
+        if (!sn || ["N/A", "-", "NONE", "UNKNOWN", "TBD"].includes(normalized)) return;
+
+        counts[normalized] = (counts[normalized] || 0) + 1;
+        if (!displayLabel[normalized]) displayLabel[normalized] = sn;
+      });
+
+      duplicateSerialSet = new Set(
+        Object.keys(counts).filter(key => counts[key] > 1)
+      );
+
+      if (duplicateSerialSet.size === 0) {
+        alertBox.classList.add("d-none");
+        alertBox.innerHTML = "";
+        return;
+      }
+
+      const chipsHtml = [...duplicateSerialSet]
+        .map(key => `<span class="dup-chip" title="Click to filter this serial number" onclick="filterByDuplicate('${displayLabel[key].replace(/'/g, "\\'")}')">${displayLabel[key]} (${counts[key]}x)</span>`)
+        .join("");
+
+      alertBox.innerHTML = `<strong>Duplicate Serial Number Detected:</strong> ${chipsHtml}`;
+      alertBox.classList.remove("d-none");
+    }
+
+    function filterByDuplicate(serial) {
+      resetFilters();
+      document.getElementById("filter-search").value = serial;
+      applyFilters();
+    }
+
     function populateFilterDropdowns(items) {
-      const cSel = document.getElementById("filter-company");
-      const wSel = document.getElementById("filter-workbase");
-      const sSel = document.getElementById("filter-status");
+      const cSel   = document.getElementById("filter-company");
+      const wSel   = document.getElementById("filter-workbase");
+      const sSel   = document.getElementById("filter-status");
+      const catSel = document.getElementById("filter-category");
 
-      const currC = cSel.value, currW = wSel.value, currS = sSel.value;
+      const currC = cSel.value, currW = wSel.value, currS = sSel.value, currCat = catSel.value;
 
-      const companies = ["All", ...new Set(items.map(i => i.Company))].sort();
-      const workbases = ["All", ...new Set(items.map(i => i.Workbase))].sort();
-      const statuses  = ["All", ...new Set(items.map(i => i.Status))].sort();
+      const companies  = ["All", ...[...new Set(items.map(i => i.Company))].sort()];
+      const workbases  = ["All", ...[...new Set(items.map(i => i.Workbase))].sort()];
+      const statuses   = ["All", ...[...new Set(items.map(i => i.Status))].sort()];
+      const categories = ["All", ...[...new Set(items.map(i => i.Category))].filter(c => c !== "N/A").sort()];
 
-      cSel.innerHTML = companies.map(c => `<option value="${c}">${c}</option>`).join("");
-      wSel.innerHTML = workbases.map(w => `<option value="${w}">${w}</option>`).join("");
-      sSel.innerHTML = statuses.map(s => `<option value="${s}">${s}</option>`).join("");
+      cSel.innerHTML   = companies.map(c => `<option value="${c}">${c}</option>`).join("");
+      wSel.innerHTML   = workbases.map(w => `<option value="${w}">${w}</option>`).join("");
+      sSel.innerHTML   = statuses.map(s => `<option value="${s}">${s}</option>`).join("");
+      catSel.innerHTML = categories.map(cat => `<option value="${cat}">${cat}</option>`).join("");
 
-      if (companies.includes(currC)) cSel.value = currC;
-      if (workbases.includes(currW)) wSel.value = currW;
-      if (statuses.includes(currS))  sSel.value = currS;
+      if (companies.includes(currC))    cSel.value = currC;
+      if (workbases.includes(currW))    wSel.value = currW;
+      if (statuses.includes(currS))     sSel.value = currS;
+      if (categories.includes(currCat)) catSel.value = currCat;
     }
 
     function applyFilters() {
       const searchVal = document.getElementById("filter-search").value.toLowerCase().trim();
-      const cVal = document.getElementById("filter-company").value;
-      const wVal = document.getElementById("filter-workbase").value;
-      const sVal = document.getElementById("filter-status").value;
+      const cVal      = document.getElementById("filter-company").value;
+      const wVal      = document.getElementById("filter-workbase").value;
+      const sVal      = document.getElementById("filter-status").value;
+      const catVal    = document.getElementById("filter-category").value;
 
       const filtered = rawListItems.filter(item => {
         const textMatch = !searchVal || 
@@ -268,11 +348,12 @@
           item.Company.toLowerCase().includes(searchVal) ||
           item.Workbase.toLowerCase().includes(searchVal);
 
-        const cMatch = cVal === "All" || item.Company === cVal;
-        const wMatch = wVal === "All" || item.Workbase === wVal;
-        const sMatch = sVal === "All" || item.Status === sVal;
+        const cMatch   = cVal === "All" || item.Company === cVal;
+        const wMatch   = wVal === "All" || item.Workbase === wVal;
+        const sMatch   = sVal === "All" || item.Status === sVal;
+        const catMatch = catVal === "All" || item.Category === catVal;
 
-        return textMatch && cMatch && wMatch && sMatch;
+        return textMatch && cMatch && wMatch && sMatch && catMatch;
       });
 
       updateKPIs(filtered);
@@ -285,14 +366,15 @@
       document.getElementById("filter-company").value = "All";
       document.getElementById("filter-workbase").value = "All";
       document.getElementById("filter-status").value = "All";
+      document.getElementById("filter-category").value = "All";
       applyFilters();
     }
 
     function updateKPIs(items) {
-      document.getElementById("kpi-total").innerText = items.length;
-      document.getElementById("kpi-inuse").innerText = items.filter(i => i.Status.toLowerCase() === "in use").length;
+      document.getElementById("kpi-total").innerText   = items.length;
+      document.getElementById("kpi-inuse").innerText   = items.filter(i => i.Status.toLowerCase() === "in use").length;
       document.getElementById("kpi-instock").innerText = items.filter(i => ["in stock", "available"].includes(i.Status.toLowerCase())).length;
-      document.getElementById("kpi-repair").innerText = items.filter(i => i.Status.toLowerCase() === "repair").length;
+      document.getElementById("kpi-repair").innerText  = items.filter(i => i.Status.toLowerCase() === "repair").length;
     }
 
     function getBadgeClass(status) {
@@ -310,17 +392,24 @@
         return;
       }
 
-      tbody.innerHTML = items.map(item => `
-        <tr>
-          <td><span class="badge-status ${getBadgeClass(item.Status)}">${item.Status}</span></td>
-          <td>${item.Company}</td>
-          <td class="fw-bold">${item.Name}</td>
-          <td>${item.Brand}</td>
-          <td>${item.Model}</td>
-          <td>${item.SerialNumber}</td>
-          <td>${item.Workbase}</td>
-        </tr>
-      `).join("");
+      tbody.innerHTML = items.map(item => {
+        const isDup = duplicateSerialSet.has(item.SerialNumber.trim().toUpperCase());
+        const serialCell = isDup
+          ? `<span class="text-danger fw-bold">${item.SerialNumber}</span>`
+          : item.SerialNumber;
+
+        return `
+          <tr>
+            <td><span class="badge-status ${getBadgeClass(item.Status)}">${item.Status}</span></td>
+            <td>${item.Company}</td>
+            <td class="fw-bold">${item.Name}</td>
+            <td>${item.Brand}</td>
+            <td>${item.Model}</td>
+            <td>${serialCell}</td>
+            <td>${item.Workbase}</td>
+          </tr>
+        `;
+      }).join("");
     }
 
     function countByProperty(items, prop) {
