@@ -295,7 +295,7 @@
       }
 
       const chipsHtml = [...duplicateSerialSet]
-        .map(key => `<span class="dup-chip" title="Click to filter this serial number" onclick="filterByDuplicate('${displayLabel[key].replace(/'/g, "\\'")}')">${displayLabel[key]} (${counts[key]}x)</span>`)
+        .map(key => `<span class="dup-chip" title="Click to filter this serial number" onclick="filterByDuplicate('${displayLabel[key].replace(/'/g, "\\'")}')">${displayLabel[key]}</span>`)
         .join("");
 
       alertBox.innerHTML = `<strong>Duplicate Serial Number Detected:</strong> ${chipsHtml}`;
