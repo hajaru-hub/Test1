@@ -1,6 +1,7 @@
 [
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 2,
     "Model": "MacBook Air (13-inch, M2)",
@@ -11,6 +12,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 3,
     "Model": "MacBook Pro (14-inch, M4, 2024)",
@@ -21,6 +23,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 4,
     "Model": "MacBook Air (M1, 2020)",
@@ -31,6 +34,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 5,
     "Model": "MacBook Air (M1, 2020)",
@@ -41,6 +45,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 6,
     "Model": "Macbook Air M1",
@@ -51,6 +56,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 7,
     "Model": "Vostro 5320",
@@ -61,6 +67,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 8,
     "Model": "Latitude 3450",
@@ -71,6 +78,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 9,
     "Model": "Macbook Air (M1, 2020)",
@@ -81,6 +89,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 10,
     "Model": "Latitude 5330",
@@ -91,6 +100,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 11,
     "Model": "MacBook Air (13-inch, M4, 2025)",
@@ -101,6 +111,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "DESKTOP",
     "Company": "RLEB",
     "ID": 12,
     "Model": "iMac (Retina 5K, 27-inch, 2019)",
@@ -111,6 +122,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 13,
     "Model": "Macbook Air (M1, 2020)",
@@ -121,6 +133,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 14,
     "Model": "Latitude 5330",
@@ -131,6 +144,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLEB",
     "ID": 15,
     "Model": null,
@@ -141,6 +155,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 17,
     "Model": "Vostro 5320",
@@ -151,6 +166,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLEB",
     "ID": 18,
     "Model": null,
@@ -161,6 +177,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 19,
     "Model": "Latitude 5330",
@@ -171,6 +188,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 20,
     "Model": "Latitude 3440",
@@ -181,6 +199,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 21,
     "Model": "LATITUDE 5330",
@@ -191,6 +210,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 22,
     "Model": "LATITUDE 5330",
@@ -201,6 +221,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLEB",
     "ID": 23,
     "Model": null,
@@ -211,6 +232,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 24,
     "Model": "Latitude 3450",
@@ -221,6 +243,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 25,
     "Model": "Latitude 3450",
@@ -231,6 +254,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 26,
     "Model": "Latitude 3450",
@@ -241,6 +265,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 27,
     "Model": "PRO 14 (PC14250)",
@@ -251,6 +276,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 28,
     "Model": "XPS 14 9440",
@@ -261,6 +287,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 29,
     "Model": "LATITUDE 3450",
@@ -271,6 +298,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 30,
     "Model": "LATITUDE 5330",
@@ -281,6 +309,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 32,
     "Model": "Latitude 3450",
@@ -291,6 +320,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 34,
     "Model": "LATITUDE 5330",
@@ -301,6 +331,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 35,
     "Model": "LATITUDE 3450",
@@ -311,6 +342,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 36,
     "Model": "Pro 14 Essential PV14250",
@@ -321,6 +353,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 37,
     "Model": "Pro 14 Essential PV14250",
@@ -331,6 +364,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 42,
     "Model": "Vostro 5490",
@@ -341,6 +375,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "AMS",
     "ID": 98,
     "Model": "Vostro 5471",
@@ -351,6 +386,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "AMS",
     "ID": 99,
     "Model": "MacBook Pro 13' M1",
@@ -361,6 +397,7 @@
   },
   {
     "Brand": "HP",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 101,
     "Model": "HP Spectre x360 Conv 14-ea0054TU",
@@ -371,6 +408,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 102,
     "Model": "MacBook Air 13.3 - 2020",
@@ -381,6 +419,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 103,
     "Model": "MacBook Air M1 13.3\" - Late 2020",
@@ -391,6 +430,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 104,
     "Model": "Inspiron 14 3467",
@@ -401,6 +441,7 @@
   },
   {
     "Brand": "HP",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 105,
     "Model": "HP Spectre x360 - 15-ch011nr",
@@ -411,6 +452,7 @@
   },
   {
     "Brand": "ACER",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 106,
     "Model": "SF113-31-P6GS",
@@ -421,6 +463,7 @@
   },
   {
     "Brand": "HP",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 107,
     "Model": "HP Laptop 15-fc0275AU",
@@ -431,6 +474,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 108,
     "Model": "Inspiron 14 5420",
@@ -441,6 +485,7 @@
   },
   {
     "Brand": "ASUS",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 109,
     "Model": "A516J",
@@ -451,6 +496,7 @@
   },
   {
     "Brand": "ACER",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 110,
     "Model": "Predator G3-572",
@@ -461,6 +507,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLS",
     "ID": 111,
     "Model": "Latitude 3420",
@@ -471,6 +518,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLR",
     "ID": 115,
     "Model": "LATITUDE 5430",
@@ -481,6 +529,7 @@
   },
   {
     "Brand": "MSI",
+    "Category": "LAPTOP",
     "Company": "RLR",
     "ID": 116,
     "Model": "Cyborg 15 A12VE",
@@ -491,6 +540,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLR",
     "ID": 117,
     "Model": "Latitude 3450",
@@ -501,6 +551,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLP",
     "ID": 120,
     "Model": "Macbook Pro (14-inch, 2021)",
@@ -511,6 +562,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLP",
     "ID": 121,
     "Model": "Dell Pro 14 PC14250",
@@ -521,6 +573,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "APRL",
     "ID": 122,
     "Model": "Vostro 5481",
@@ -531,6 +584,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLLL",
     "ID": 123,
     "Model": "Vostro 5490",
@@ -541,6 +595,7 @@
   },
   {
     "Brand": "LENOVO",
+    "Category": "LAPTOP",
     "Company": "PMAX",
     "ID": 139,
     "Model": "THINKPAD E14 GEN2",
@@ -551,6 +606,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 140,
     "Model": null,
@@ -561,6 +617,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 141,
     "Model": null,
@@ -571,6 +628,7 @@
   },
   {
     "Brand": "LENOVO",
+    "Category": "LAPTOP",
     "Company": "PMAX",
     "ID": 142,
     "Model": "THINKPAD E14 GEN5",
@@ -581,6 +639,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 143,
     "Model": null,
@@ -591,6 +650,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 144,
     "Model": null,
@@ -601,6 +661,7 @@
   },
   {
     "Brand": "LENOVO",
+    "Category": "LAPTOP",
     "Company": "PMAX",
     "ID": 145,
     "Model": "THINKPAD E14 GEN2",
@@ -611,6 +672,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 146,
     "Model": null,
@@ -621,6 +683,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 147,
     "Model": null,
@@ -631,6 +694,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 148,
     "Model": null,
@@ -641,6 +705,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 149,
     "Model": null,
@@ -651,6 +716,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "PMAX",
     "ID": 150,
     "Model": null,
@@ -661,6 +727,7 @@
   },
   {
     "Brand": "LENOVO",
+    "Category": "LAPTOP",
     "Company": "PMAX",
     "ID": 153,
     "Model": "THINKPAD E14 GEN2",
@@ -671,6 +738,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 154,
     "Model": "13-INCH MACBOOK AIR (M4,2025)",
@@ -681,6 +749,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 155,
     "Model": "MACBOOK AIR (M2, 2022)",
@@ -691,6 +760,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 156,
     "Model": "13-INCH MACBOOK AIR (M4,2025)",
@@ -701,6 +771,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 157,
     "Model": "MacBook Air (Retina, 13-inch, 2020) ",
@@ -711,6 +782,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 158,
     "Model": "MACBOOK AIR (M1 , 2020)",
@@ -721,6 +793,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 159,
     "Model": "Latitude 5330",
@@ -731,6 +804,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 163,
     "Model": "MACBOOK AIR (13-INCH, MID 2013)",
@@ -741,6 +815,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 164,
     "Model": "VOSTRO 5490",
@@ -751,6 +826,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 165,
     "Model": "Pro 14 Essential PV14250",
@@ -761,6 +837,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 166,
     "Model": "MACBOOK AIR(M1,2020)",
@@ -771,6 +848,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 167,
     "Model": "MacBook Air (Retina, 13-inch, 2020)",
@@ -781,6 +859,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 168,
     "Model": "Latitude 3450",
@@ -791,6 +870,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 169,
     "Model": "Latitude 3450",
@@ -801,6 +881,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 170,
     "Model": "VOSTRO 5468",
@@ -811,6 +892,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 171,
     "Model": "MacBook Pro 13'-2020",
@@ -821,6 +903,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 172,
     "Model": "MACBOOK AIR(M1,2020)",
@@ -831,6 +914,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 173,
     "Model": "Latitude 3440",
@@ -841,6 +925,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 174,
     "Model": "Vostro 5320",
@@ -851,6 +936,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 175,
     "Model": "MACBOOK AIR , (M1, 2020 13.3 inch)",
@@ -861,6 +947,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 176,
     "Model": "LATITUDE 3440",
@@ -871,6 +958,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLSB",
     "ID": 177,
     "Model": null,
@@ -881,6 +969,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 178,
     "Model": "Macbook Air 202",
@@ -891,6 +980,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 179,
     "Model": "Latitude 3450",
@@ -901,6 +991,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 180,
     "Model": "Vostro 5490",
@@ -911,6 +1002,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 181,
     "Model": "VOSTRO 5471",
@@ -921,6 +1013,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLSB",
     "ID": 184,
     "Model": null,
@@ -931,6 +1024,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 185,
     "Model": "LATITUDE 3420",
@@ -941,6 +1035,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 186,
     "Model": "Latitude 3450",
@@ -951,6 +1046,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 187,
     "Model": "VOSTRO 5490",
@@ -961,6 +1057,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 188,
     "Model": "Latitude 3450",
@@ -971,6 +1068,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 189,
     "Model": "VOSTRO 5481",
@@ -981,6 +1079,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 190,
     "Model": "VOSTRO 5490",
@@ -991,6 +1090,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 191,
     "Model": "Latitude 5330",
@@ -1001,6 +1101,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 192,
     "Model": "Latitude 3450",
@@ -1011,6 +1112,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 193,
     "Model": "VOSTRO 5490",
@@ -1021,6 +1123,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 194,
     "Model": "LATITUDE 5330",
@@ -1031,6 +1134,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 195,
     "Model": "VOSTRO 14 5468",
@@ -1041,6 +1145,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 196,
     "Model": "VOSTRO 5481",
@@ -1051,6 +1156,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 197,
     "Model": "Vostro 5490",
@@ -1061,6 +1167,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 199,
     "Model": "VOSTRO 5490",
@@ -1071,6 +1178,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 200,
     "Model": "Latitude 3450",
@@ -1081,6 +1189,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 201,
     "Model": "Latitude 3450",
@@ -1091,6 +1200,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 202,
     "Model": "VOSTRO 5468",
@@ -1101,6 +1211,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 203,
     "Model": "Latitude 3430",
@@ -1111,6 +1222,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 204,
     "Model": "VOSTRO 5481",
@@ -1121,6 +1233,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 205,
     "Model": "VOSTRO 5481",
@@ -1131,6 +1244,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 206,
     "Model": "MacBook Air (13-inch, 2017)",
@@ -1141,6 +1255,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 207,
     "Model": "VOSTRO 5481",
@@ -1151,6 +1266,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 208,
     "Model": "G5 5520",
@@ -1161,6 +1277,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 209,
     "Model": "Latitude 3450",
@@ -1171,6 +1288,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 210,
     "Model": "Latitude 3450",
@@ -1181,6 +1299,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 211,
     "Model": "LATITUDE 5330",
@@ -1191,6 +1310,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 212,
     "Model": "Vostro 5481",
@@ -1201,6 +1321,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 213,
     "Model": "LATITUDE 5330",
@@ -1211,6 +1332,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 214,
     "Model": "Latitude 5330",
@@ -1221,6 +1343,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 215,
     "Model": "LATITUDE 5330",
@@ -1231,6 +1354,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 216,
     "Model": "Vostro 5490",
@@ -1241,6 +1365,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 217,
     "Model": "LATITUDE 3420",
@@ -1251,6 +1376,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 218,
     "Model": "Vostro 5490",
@@ -1261,6 +1387,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 219,
     "Model": "Latitude 3420",
@@ -1271,6 +1398,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 220,
     "Model": "Vostro 5490",
@@ -1281,6 +1409,7 @@
   },
   {
     "Brand": null,
+    "Category": "",
     "Company": "RLSB",
     "ID": 221,
     "Model": null,
@@ -1291,6 +1420,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 222,
     "Model": " Pro 14 Essential PV14250",
@@ -1301,6 +1431,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 223,
     "Model": "LATITUDE 5330",
@@ -1311,6 +1442,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 224,
     "Model": "LATITUDE 3450",
@@ -1321,6 +1453,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 225,
     "Model": "Latitude 3450",
@@ -1331,6 +1464,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 226,
     "Model": "Vostro 5481",
@@ -1341,6 +1475,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 228,
     "Model": "Vostro 5490",
@@ -1351,6 +1486,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 229,
     "Model": " Latitude 3450",
@@ -1361,6 +1497,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 230,
     "Model": "13-INCH MACBOOK AIR (M2,2022)",
@@ -1371,6 +1508,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 231,
     "Model": "Inspiron 3470",
@@ -1381,6 +1519,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 232,
     "Model": "Vostro 5471",
@@ -1391,6 +1530,7 @@
   },
   {
     "Brand": "SAMSUNG",
+    "Category": "MONITOR",
     "Company": "RLSB",
     "ID": 238,
     "Model": "S24C310EAE",
@@ -1401,6 +1541,7 @@
   },
   {
     "Brand": "SAMSUNG",
+    "Category": "DESKTOP",
     "Company": "RLSB",
     "ID": 239,
     "Model": "S24F350FHE",
@@ -1411,6 +1552,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 240,
     "Model": "VOSTRO 5490",
@@ -1421,6 +1563,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 241,
     "Model": "Dell Pro 14 PC14250",
@@ -1431,6 +1574,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 242,
     "Model": "MACBook Air 13' - 2019",
@@ -1441,6 +1585,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 244,
     "Model": "VOSTRO 5481",
@@ -1451,6 +1596,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "DESKTOP",
     "Company": "RLEB",
     "ID": 246,
     "Model": "Imac 21 - 2019",
@@ -1461,6 +1607,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 247,
     "Model": "VOSTRO 5490",
@@ -1471,6 +1618,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "DESKTOP",
     "Company": "RLSB",
     "ID": 250,
     "Model": "Inspiron 3470",
@@ -1481,6 +1629,7 @@
   },
   {
     "Brand": "APPLE",
+    "Category": "LAPTOP",
     "Company": "RLEB",
     "ID": 253,
     "Model": "MacBook Air (M1,2020)",
@@ -1491,6 +1640,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 255,
     "Model": "Latitude 5430 Rugged",
@@ -1501,6 +1651,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB",
     "ID": 256,
     "Model": "Latitude 5430 Rugged",
@@ -1511,6 +1662,7 @@
   },
   {
     "Brand": "DELL",
+    "Category": "LAPTOP",
     "Company": "RLSB TH",
     "ID": 258,
     "Model": "Latitude 3450",
