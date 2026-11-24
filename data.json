@@ -2030,13 +2030,13 @@
   {
     "Brand": null,
     "Category": "",
-    "Company": null,
+    "Company": "RLSB",
     "DatePurchase": null,
     "ID": 276,
     "Model": null,
-    "Name": null,
+    "Name": "NICK ANDREW TEO",
     "SerialNumber": null,
-    "Status": null,
+    "Status": "In Use",
     "Workbase": null
   }
 ]
