@@ -1862,7 +1862,7 @@
   {
     "Brand": "DELL",
     "Category": "MONITOR",
-    "Company": null,
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 262,
     "Model": "P3421W",
@@ -1874,7 +1874,7 @@
   {
     "Brand": "ARC STEALTH",
     "Category": "MONITOR",
-    "Company": null,
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 263,
     "Model": "X340 PRO",
@@ -1882,5 +1882,29 @@
     "SerialNumber": "23142",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 264,
+    "Model": "E2420HS",
+    "Name": "RAJA AZLAN AMIRUL BIN RAJA MAT",
+    "SerialNumber": "37LQM54",
+    "Status": "In Use",
+    "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": "RLEB",
+    "DatePurchase": null,
+    "ID": 265,
+    "Model": null,
+    "Name": "YAP FOOI FOONG",
+    "SerialNumber": null,
+    "Status": "In Use",
+    "Workbase": null
   }
 ]
