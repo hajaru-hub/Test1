@@ -1956,15 +1956,15 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
+    "Brand": "SAMSUNG",
+    "Category": "MONITOR",
+    "Company": "RLSB",
     "DatePurchase": null,
     "ID": 270,
-    "Model": null,
-    "Name": null,
+    "Model": "S24F350FHE",
+    "Name": "ABDUL KARIM BIN SAINUDDIN",
     "SerialNumber": "LS24F350FHEXXM",
-    "Status": null,
-    "Workbase": null
+    "Status": "In Use",
+    "Workbase": "KL"
   }
 ]
