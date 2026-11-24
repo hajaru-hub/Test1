@@ -1850,7 +1850,7 @@
   {
     "Brand": "DELL",
     "Category": "MONITOR",
-    "Company": null,
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 261,
     "Model": "E2420HS",
@@ -1873,7 +1873,7 @@
   },
   {
     "Brand": null,
-    "Category": "",
+    "Category": "MONITOR",
     "Company": null,
     "DatePurchase": null,
     "ID": 263,
@@ -1881,6 +1881,6 @@
     "Name": "THIEN CHIET CHAI",
     "SerialNumber": null,
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
