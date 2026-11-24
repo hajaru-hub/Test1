@@ -1838,7 +1838,7 @@
   {
     "Brand": "VIEWSONIC",
     "Category": "MONITOR",
-    "Company": null,
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 260,
     "Model": "VA2432-h",
@@ -1930,5 +1930,17 @@
     "SerialNumber": "3BXRH53",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 268,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]
