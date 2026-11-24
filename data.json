@@ -1908,15 +1908,15 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
+    "Brand": "DELL",
+    "Category": "MONITOR",
     "Company": "RLEB",
     "DatePurchase": null,
     "ID": 266,
-    "Model": null,
+    "Model": "E2425HS",
     "Name": "NADHIRA NUR KHALIESA BINTI AMALUDDIN",
-    "SerialNumber": null,
+    "SerialNumber": "4YGD964",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
