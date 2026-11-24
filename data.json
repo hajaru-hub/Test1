@@ -1942,5 +1942,29 @@
     "SerialNumber": "47FH074",
     "Status": "In Stock",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": "RLSB",
+    "DatePurchase": null,
+    "ID": 269,
+    "Model": "E2420HS",
+    "Name": "ZULKURNAIN BIN MAMAT",
+    "SerialNumber": "FLC1X23",
+    "Status": "In Use",
+    "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 270,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": "LS24F350FHEXXM",
+    "Status": null,
+    "Workbase": null
   }
 ]
