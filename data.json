@@ -2014,5 +2014,29 @@
     "SerialNumber": "4ZGD964",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": "RLSB",
+    "DatePurchase": null,
+    "ID": 275,
+    "Model": "E2420HS",
+    "Name": "MUHAMAD FIRDAUS BIN BIDI",
+    "SerialNumber": null,
+    "Status": "In Use",
+    "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 276,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]
