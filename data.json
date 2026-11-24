@@ -1966,5 +1966,29 @@
     "SerialNumber": "LS24F350FHEXXM",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 271,
+    "Model": "S2719 ",
+    "Name": "NOR HASLISA FATIAH BINTI HASNAN",
+    "SerialNumber": "BFB7FM2",
+    "Status": "In Use",
+    "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 272,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "Status": null,
+    "Workbase": null
   }
 ]
