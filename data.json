@@ -1896,15 +1896,15 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
+    "Brand": "HP",
+    "Category": "MONITOR",
     "Company": "RLEB",
     "DatePurchase": null,
     "ID": 265,
-    "Model": null,
+    "Model": "V193",
     "Name": "YAP FOOI FOONG",
-    "SerialNumber": null,
+    "SerialNumber": "3CQ443169F",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
