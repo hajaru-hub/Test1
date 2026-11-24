@@ -1856,7 +1856,7 @@
     "Model": "E2420HS",
     "Name": "WAN NURNAIMI BINTI WAN MOHAMAD",
     "SerialNumber": "CLC1X23",
-    "Status": null,
+    "Status": "In Use",
     "Workbase": "KL"
   },
   {
@@ -1868,7 +1868,19 @@
     "Model": "P3421W",
     "Name": "LIM CHUI LING CHERYL",
     "SerialNumber": "5BXRH53",
-    "Status": null,
+    "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 263,
+    "Model": null,
+    "Name": "THIEN CHIET CHAI",
+    "SerialNumber": null,
+    "Status": "In Use",
+    "Workbase": null
   }
 ]
