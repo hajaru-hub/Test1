@@ -1990,5 +1990,17 @@
     "SerialNumber": null,
     "Status": null,
     "Workbase": null
+  },
+  {
+    "Brand": "SAMSUNG",
+    "Category": "MONITOR",
+    "Company": "RLSB",
+    "DatePurchase": null,
+    "ID": 273,
+    "Model": "S24D690L",
+    "Name": "MD.FAIZAL BIN JAMALLUDIN",
+    "SerialNumber": "0K39HTQF200249Y",
+    "Status": "In Use",
+    "Workbase": "KL"
   }
 ]
