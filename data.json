@@ -1837,7 +1837,7 @@
   },
   {
     "Brand": null,
-    "Category": "",
+    "Category": "MONITOR",
     "Company": null,
     "DatePurchase": null,
     "ID": 260,
@@ -1845,6 +1845,6 @@
     "Name": "NOR AZWATI BINTI AZMI",
     "SerialNumber": null,
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
