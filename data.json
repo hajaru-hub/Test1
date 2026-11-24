@@ -2028,15 +2028,15 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
+    "Brand": "DELL",
+    "Category": "MONITOR",
     "Company": "RLSB",
     "DatePurchase": null,
     "ID": 276,
-    "Model": null,
+    "Model": "E2417H",
     "Name": "NICK ANDREW TEO",
-    "SerialNumber": null,
+    "SerialNumber": "5CD1XV2",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "LBU"
   }
 ]
