@@ -2050,5 +2050,17 @@
     "SerialNumber": "MMT0CSM0029200E59D850B",
     "Status": "In Use",
     "Workbase": "MY"
+  },
+  {
+    "Brand": "SAMSUNG",
+    "Category": "MONITOR",
+    "Company": "RLP",
+    "DatePurchase": null,
+    "ID": 278,
+    "Model": "LU32R590CWEXXM",
+    "Name": "MOHD FADZLI BIN HAMIDUN\n",
+    "SerialNumber": "0BVHHNAR200014",
+    "Status": "In Use",
+    "Workbase": "KL"
   }
 ]
