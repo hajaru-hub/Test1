@@ -1824,16 +1824,16 @@
     "Workbase": "TH"
   },
   {
-    "Brand": null,
-    "Category": "",
+    "Brand": "DELL",
+    "Category": "MONITOR",
     "Company": "RLEB",
     "DatePurchase": null,
     "ID": 259,
-    "Model": null,
+    "Model": "E2725H",
     "Name": "MOKHTAR BIN HAJI ALI",
-    "SerialNumber": null,
+    "SerialNumber": "CN-0M8NFY",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   },
   {
     "Brand": null,
