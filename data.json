@@ -1918,5 +1918,17 @@
     "SerialNumber": "4YGD964",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": "RLSB",
+    "DatePurchase": null,
+    "ID": 267,
+    "Model": "P3421W",
+    "Name": "MAD HAIMI BIN ABU HASSAN",
+    "SerialNumber": "3BXRH53",
+    "Status": "In Use",
+    "Workbase": "KL"
   }
 ]
