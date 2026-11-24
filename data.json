@@ -1932,15 +1932,15 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 268,
-    "Model": null,
-    "Name": null,
-    "SerialNumber": null,
-    "Status": null,
-    "Workbase": null
+    "Model": "E2420HS",
+    "Name": "SPARE - RLEB",
+    "SerialNumber": "47FH074",
+    "Status": "In Stock",
+    "Workbase": "KL"
   }
 ]
