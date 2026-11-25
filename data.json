@@ -178,7 +178,7 @@
     "Name": "MOHD ZULFADLI BIN OMOR",
     "SerialNumber": null,
     "StaffID": "RLE-0031",
-    "Status": "In Use",
+    "Status": null,
     "Workbase": "KL"
   },
   {
@@ -269,7 +269,7 @@
     "Name": "MOHD RAIS BIN HAZIZAN",
     "SerialNumber": null,
     "StaffID": "RLE-0051",
-    "Status": "In Use",
+    "Status": null,
     "Workbase": "KL"
   },
   {
