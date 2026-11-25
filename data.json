@@ -2145,19 +2145,6 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
-    "DatePurchase": null,
-    "ID": 272,
-    "Model": null,
-    "Name": null,
-    "SerialNumber": null,
-    "StaffID": "",
-    "Status": null,
-    "Workbase": null
-  },
-  {
     "Brand": "SAMSUNG",
     "Category": "MONITOR",
     "Company": "RLSB",
@@ -2216,7 +2203,7 @@
     "DatePurchase": null,
     "ID": 277,
     "Model": "K202HQL",
-    "Name": "SPARE MONITOR - MIRI",
+    "Name": "SPARE MONITOR MIRI - K202HQL",
     "SerialNumber": "MMT0CSM0029200E59D850B",
     "StaffID": "",
     "Status": "In Use",
