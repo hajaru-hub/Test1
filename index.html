@@ -140,7 +140,7 @@
     <div class="row g-3 mb-3">
       <div class="col-md-3">
         <div class="dashboard-card border-accent-purple">
-          <div class="kpi-title" style="color: #6b469b;">Total Staff Records</div>
+          <div class="kpi-title" style="color: #6b469b;">Total Staff</div>
           <div class="kpi-value" id="kpi-total">0</div>
         </div>
       </div>
@@ -241,7 +241,6 @@
       const dateStr = parseFieldValue(rawDateVal);
       if (dateStr === "N/A") return null;
 
-      // Supports DD/MM/YYYY or DD-MM-YYYY strings if present
       const dmyMatch = dateStr.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
       if (dmyMatch) {
         const parsed = new Date(Number(dmyMatch[3]), Number(dmyMatch[2]) - 1, Number(dmyMatch[1]));
@@ -274,11 +273,12 @@
 
         rawListItems = items
           .map(item => {
-            const rawDate = item.DatePurchase || item.DATE_x0020_PURCHASE || item['DATE PURCHASE'] || item.Date_x0020_Purchase || item.PurchaseDate;
+            const rawDate = item.DatePurchase || item.DATEPURCHASE || item.DATE_x0020_PURCHASE || item['DATE PURCHASE'] || item.Date_x0020_Purchase || item.PurchaseDate;
             const parsedDate = parsePurchaseDate(rawDate);
 
             return {
               ID: item.ID || item.No || item.Id,
+              StaffID: parseFieldValue(item.StaffID || item.STAFFID || item.STAFF_x0020_ID || item['STAFF ID'] || item.Staff_x0020_ID || item.EmployeeID),
               Status: parseFieldValue(item.Status || item.STATUS),
               Company: parseFieldValue(item.Company || item.COMPANY),
               Name: parseFieldValue(item.Name || item.NAME || item.Title),
@@ -408,7 +408,14 @@
     }
 
     function updateKPIs(items) {
-      document.getElementById("kpi-total").innerText   = items.length;
+      const ignoredStaffValues = ["N/A", "NA", "-", "NONE", "SPARE", "IN STOCK", "STOCK", "UNKNOWN", "TBD", "0"];
+      const uniqueStaffIds = new Set(
+        items
+          .map(i => i.StaffID.trim().toUpperCase())
+          .filter(id => id && !ignoredStaffValues.includes(id))
+      );
+
+      document.getElementById("kpi-total").innerText   = uniqueStaffIds.size;
       document.getElementById("kpi-inuse").innerText   = items.filter(i => i.Status.toLowerCase() === "in use").length;
       document.getElementById("kpi-instock").innerText = items.filter(i => ["in stock", "available"].includes(i.Status.toLowerCase())).length;
       document.getElementById("kpi-repair").innerText  = items.filter(i => i.Status.toLowerCase() === "repair").length;
