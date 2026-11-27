@@ -2255,23 +2255,10 @@
     "DatePurchase": null,
     "ID": 283,
     "Model": null,
-    "Name": null,
+    "Name": "WAN HASSAN BIN MOHD JAMIL",
     "SerialNumber": null,
-    "StaffID": "",
+    "StaffID": "RLE-0002",
     "Status": "In Use",
-    "Workbase": null
-  },
-  {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
-    "DatePurchase": null,
-    "ID": 284,
-    "Model": null,
-    "Name": null,
-    "SerialNumber": null,
-    "StaffID": "",
-    "Status": null,
     "Workbase": null
   }
 ]
