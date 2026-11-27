@@ -2035,7 +2035,7 @@
     "ID": 263,
     "Model": "X340 PRO",
     "Name": "THIEN CHIET CHAI",
-    "SerialNumber": "23142",
+    "SerialNumber": "BBQT571029276J0469",
     "StaffID": "RLE-0001",
     "Status": "In Use",
     "Workbase": "KL"
@@ -2119,19 +2119,6 @@
     "Workbase": "KL"
   },
   {
-    "Brand": "SAMSUNG",
-    "Category": "MONITOR",
-    "Company": "RLSB",
-    "DatePurchase": null,
-    "ID": 270,
-    "Model": "S24F350FHE",
-    "Name": "ABDUL KARIM BIN SAINUDDIN",
-    "SerialNumber": "LS24F350FHEXXM",
-    "StaffID": "RL-0010",
-    "Status": "In Use",
-    "Workbase": "KL"
-  },
-  {
     "Brand": "DELL",
     "Category": "MONITOR",
     "Company": "RLSB",
@@ -2145,14 +2132,14 @@
     "Workbase": "KL"
   },
   {
-    "Brand": "SAMSUNG",
+    "Brand": "DELL",
     "Category": "MONITOR",
     "Company": "RLSB",
     "DatePurchase": null,
     "ID": 273,
-    "Model": "S24D690L",
+    "Model": "SE2719H",
     "Name": "MD.FAIZAL BIN JAMALLUDIN",
-    "SerialNumber": "0K39HTQF200249Y",
+    "SerialNumber": "5RJHRY2",
     "StaffID": "RL-0055",
     "Status": "In Use",
     "Workbase": "KL"
