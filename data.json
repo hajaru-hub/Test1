@@ -2208,5 +2208,18 @@
     "StaffID": "RLP-0001",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "PHILIPS",
+    "Category": "MONITOR",
+    "Company": "RLS",
+    "DatePurchase": null,
+    "ID": 279,
+    "Model": "241V8",
+    "Name": "ANWARUDIN BIN SAIDU MOHAMED",
+    "SerialNumber": null,
+    "StaffID": "",
+    "Status": "In Use",
+    "Workbase": "KL"
   }
 ]
