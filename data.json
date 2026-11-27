@@ -2223,16 +2223,16 @@
     "Workbase": "KL"
   },
   {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
+    "Brand": "DELL",
+    "Category": "MONITOR",
+    "Company": "RLEB",
     "DatePurchase": null,
     "ID": 280,
-    "Model": null,
+    "Model": "E2420HS",
     "Name": "MONITOR  (IT DEPT) - E2420HS",
-    "SerialNumber": null,
+    "SerialNumber": "DLC1X23",
     "StaffID": "",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
