@@ -2247,18 +2247,5 @@
     "StaffID": "",
     "Status": "In Stock",
     "Workbase": "KL"
-  },
-  {
-    "Brand": null,
-    "Category": "",
-    "Company": null,
-    "DatePurchase": null,
-    "ID": 282,
-    "Model": null,
-    "Name": null,
-    "SerialNumber": null,
-    "StaffID": "",
-    "Status": null,
-    "Workbase": null
   }
 ]
