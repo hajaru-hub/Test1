@@ -806,8 +806,8 @@
     "Workbase": null
   },
   {
-    "Brand": null,
-    "Category": "",
+    "Brand": "LENOVO",
+    "Category": "LAPTOP",
     "Company": "PMAX",
     "DatePurchase": null,
     "ID": 147,
@@ -816,7 +816,7 @@
     "SerialNumber": null,
     "StaffID": "PMAX009",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "IDN"
   },
   {
     "Brand": null,
