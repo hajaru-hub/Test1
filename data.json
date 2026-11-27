@@ -2098,9 +2098,9 @@
     "Company": "RLEB",
     "DatePurchase": null,
     "ID": 268,
-    "Model": "E2420HS",
+    "Model": "E2425HS",
     "Name": "SPARE - RLEB E2420HS",
-    "SerialNumber": "47FH074",
+    "SerialNumber": "4WGD964",
     "StaffID": "",
     "Status": "In Stock",
     "Workbase": "KL"
@@ -2247,5 +2247,31 @@
     "StaffID": "",
     "Status": "In Stock",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": "RLEB",
+    "DatePurchase": null,
+    "ID": 283,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "StaffID": "",
+    "Status": "In Use",
+    "Workbase": null
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 284,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "StaffID": "",
+    "Status": null,
+    "Workbase": null
   }
 ]
