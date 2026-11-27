@@ -2221,5 +2221,18 @@
     "StaffID": "",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 280,
+    "Model": null,
+    "Name": "MONITOR  (IT DEPT) - E2420HS",
+    "SerialNumber": null,
+    "StaffID": "",
+    "Status": "In Use",
+    "Workbase": null
   }
 ]
