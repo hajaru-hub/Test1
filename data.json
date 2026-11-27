@@ -2234,5 +2234,18 @@
     "StaffID": "",
     "Status": "In Use",
     "Workbase": "KL"
+  },
+  {
+    "Brand": "HP",
+    "Category": "MONITOR",
+    "Company": "RLEB",
+    "DatePurchase": null,
+    "ID": 281,
+    "Model": "V193",
+    "Name": "MONITOR (SPARE) - V193",
+    "SerialNumber": "3CQ44317F2",
+    "StaffID": "",
+    "Status": "In Stock",
+    "Workbase": "KL"
   }
 ]
