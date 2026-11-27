@@ -2250,7 +2250,7 @@
   },
   {
     "Brand": null,
-    "Category": "",
+    "Category": "MONITOR",
     "Company": "RLEB",
     "DatePurchase": null,
     "ID": 283,
@@ -2259,6 +2259,6 @@
     "SerialNumber": null,
     "StaffID": "RLE-0002",
     "Status": "In Use",
-    "Workbase": null
+    "Workbase": "KL"
   }
 ]
