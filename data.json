@@ -2218,7 +2218,7 @@
     "Model": "241V8",
     "Name": "ANWARUDIN BIN SAIDU MOHAMED",
     "SerialNumber": "ZV02110000512",
-    "StaffID": "",
+    "StaffID": "RLS-0001",
     "Status": "In Use",
     "Workbase": "KL"
   },
@@ -2247,5 +2247,18 @@
     "StaffID": "",
     "Status": "In Stock",
     "Workbase": "KL"
+  },
+  {
+    "Brand": null,
+    "Category": "",
+    "Company": null,
+    "DatePurchase": null,
+    "ID": 282,
+    "Model": null,
+    "Name": null,
+    "SerialNumber": null,
+    "StaffID": "",
+    "Status": null,
+    "Workbase": null
   }
 ]
